@@ -1839,7 +1839,7 @@ section {
 
 .about-video .content ul i {
   font-size: 24px;
-  color: #2487ce;
+  color: #c7022a;
   position: absolute;
   left: 0;
   top: -2px;
@@ -2347,7 +2347,32 @@ section {
   border: 2px solid #0563bb;
 }
 
-.resume .resume-item .play-btn {
+.resume .resume-item .img {
+  position: relative;
+}
+.resume .resume-item .img:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(254, 254, 254, 0.5);
+  border-radius: 15px;
+  transform: rotate(12deg);
+}
+.resume .resume-item .img:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(254, 254, 254, 0.9);
+  border-radius: 15px;
+  transform: rotate(6deg);
+}
+.resume .resume-item .img img {
+  position: relative;
+  z-index: 3;
+  border-radius: 15px;
+}
+
+.resume .resume-item .img .play-btn {
   width: 94px;
   height: 94px;
   background: radial-gradient(#0B2B6A 50%, rgba(0, 131, 116, 0.4) 52%);
@@ -2359,7 +2384,7 @@ section {
   overflow: hidden;
 }
 
-.resume .resume-item .play-btn:before {
+.resume .resume-item .img .play-btn:before {
   content: "";
   position: absolute;
   width: 120px;
@@ -2382,7 +2407,7 @@ section {
   background: rgba(198, 16, 0, 0);
 }
 
-.resume .resume-item .play-btn:after {
+.resume .resume-item .img .play-btn:after {
   content: "";
   position: absolute;
   left: 50%;
@@ -2397,7 +2422,7 @@ section {
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-.resume .resume-item .play-btn:hover:before {
+.resume .resume-item .img .play-btn:hover:before {
   content: "";
   position: absolute;
   left: 50%;
@@ -2415,7 +2440,7 @@ section {
   border-radius: 0;
 }
 
-.resume .resume-item .play-btn:hover:after {
+.resume .resume-item .img .play-btn:hover:after {
   border-left: 15px solid #0B2B6A;
   transform: scale(20);
 }
