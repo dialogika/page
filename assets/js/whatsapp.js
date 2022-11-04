@@ -4,7 +4,7 @@ $(document).on('click','.send_contact', function(){
     /* Whatsapp Settings */
     var walink = 'https://web.whatsapp.com/send',
         phone = '6285162992597',
-        walink2 = 'Halo kak saya berminat ikut workshop. Boleh *kirimkan nomor rekening* untuk kami transfer' + '%0A%0A' 
+        walink2 = 'Halo kak saya berminat ikut kelasnya. Boleh *kirimkan nomor rekening* untuk kami transfer' + '%0A%0A' 
                 + 'Berikut data diri saya: ',
         text_yes = 'Terkirim.',
         text_no = 'Isi semua Formulir lalu klik Send.';
@@ -32,9 +32,6 @@ $(document).on('click','.send_contact', function(){
         '*Domisili*           : ' + input_domisili2 + '%0A' +
         '*Program*            : ' + input_program2 + '%0A' +
         '*Perkerjaan*         : ' + input_job2 + '%0A' +
-        '*Include CV          : ' + input_cv2 + '%0A' + 
-        '*Mocking Interview   : ' + input_mocking2 + '%0A' + 
-        '*Total Harga         : ' + input_total2 + '%0A' +
         '*Isi Message*        : ' + input_message2 + '%0A';
 
     /* Whatsapp Window Open */
