@@ -2643,6 +2643,7 @@ section {
   align-items: center;
   padding: 20px;
   transition: ease-in-out 0.3s;
+  background-color: #fff;
   box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
 }
 
@@ -2818,6 +2819,10 @@ section {
   color: #0f61a8;
 }
 
+.features-block .nav-link em {
+  color: #0f61a8;
+}
+
 .features-block .nav-link.active {
   transition: 0.3s;
   background: #F9C72E linear-gradient(rgba(15, 97, 168,0.95), rgba(36, 135, 206, 1));
@@ -2826,6 +2831,10 @@ section {
 
 .features-block .nav-link.active h4 {
   color: #fff;
+}
+
+.features-block .nav-link.active em {
+  color: #fff !important;
 }
 
 .features-block .nav-link.active i {
