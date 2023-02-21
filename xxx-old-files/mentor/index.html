@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Program - Dialogika </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"/>
+
+  <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"/>
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet"/>
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+
+  <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet"/>
+    <link href="../assets/css/program.css" rel="stylesheet"/>
+
+  <!-- Spreadsheet API Form Pendaftaran -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"      
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+    <script>
+      function SubForm (){
+        $.ajax({
+        url:"https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
+        type:"post",
+        data:$("#myForm").serializeArray(),
+        headers:{
+          accessKey: "b5216464a11be561ae0b40f9ed98ee90",
+          secretKey: "038c9369d3b221f2387c9d8f3f3e488d"},
+          success: function(){ 
+            // alert("Form Data Submitted :)")
+            $('#notifications').modal('show');
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+        });
+      }
+
+      function Subcription (){
+        $.ajax({
+          url:"https://api.apispreadsheets.com/data/18511/",
+          type:"post",
+          data:$("#subcriptions").serializeArray(),
+          success: function(){
+            window.location.href = "https://link.dialogika.co/open-whatsapp-group";
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+        });
+      }
+    </script>
+  <!-- End Spreadsheet API Form Pendaftaran -->
+
+  <!-- Pixel Facebook -->
+    <!-- DEC 2021 -->
+      <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '916674555903437');
+        fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=916674555903437&ev=PageView&noscript=1"
+      /></noscript>
+    <!-- END DEC 2021 -->
+  <!-- End Pixel Facebook -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148836422-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-148836422-2');
+    </script>
+  <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KGK9D6H');</script>
+  <!-- End Google Tag Manager -->
+  
+  <!-- Hotjar Tracking Code for https://dialogika.co -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2828594,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  <!-- End Hotjar -->
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGK9D6H"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ======= Top Bar ======= -->
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+      <div class="container d-flex justify-content-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope"></i> <a href="mailto:hello@dialogika.co">hello@dialogika.co</a>
+          <i class="bi bi-phone"></i> <a href="https://link.dialogika.co/wasap-2597-dialogika-co">+62 851-6299-2597</a>
+        </div>
+        <div class="d-none d-lg-flex social-links align-items-center">
+          <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="https://link.dialogika.co/facebook" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://link.dialogika.co/instagram" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://link.dialogika.co/linkedin" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        </div>
+      </div>
+    </div>
+  <!-- End Top Bar -->
+
+  <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+         <a href="../index.html" class="logo me-auto"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul id="navbar-navlist">
+            <li><a class="nav-link scrollto active" data-scroll href="#hero">Home</a></li>
+            <li class="dropdown"><a href="#"><span>Program</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li class="dropdown">
+                  <a href="#">
+                    <span>Online</span> <i class="bi bi-chevron-right"></i>
+                  </a>
+                  <ul>
+                    <li><a href="basic-class.html">Basic Class</a></li>
+                    <li><a href="basic-plus.html">Basic Plus</a></li>
+                    <li><a href="basic-plus.html">Presentasi</a></li>
+                    <li class="dropdown-divider"></li>
+                    <li><a href="english-class.html">English Class</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">
+                    <span>Offline</span> <i class="bi bi-chevron-right"></i>
+                  </a>
+                  <ul>
+                    <li><a href="first-class.html">First Class</a></li>
+                    <li><a href="master-class.html">Master Class</a></li>
+                    <li><a href="pro-class.html">Pro Class</a></li>
+                    <li class="dropdown-divider"></li>
+                    <li><a href="emce-class.html">Master of Ceremony</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">
+                    <span>Custom</span> <i class="bi bi-chevron-right"></i>
+                  </a>
+                  <ul>
+                    <li><a href="../request/private-class.html">Private Class</a></li>
+                    <li><a href="../request/private-group.html">Private Group</a></li>
+                    <li class="dropdown-divider"></li>
+                    <li><a href="../request/for-company.html">For Company</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li class="align-items-center">
+                  <a href="index.html">Discover</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+        <!-- <a href="basic-plus.html" class="appointment-btn">Recommended<span class="d-none d-md-inline"> Program</span></a> -->
+
+      </div>
+    </header>
+  <!-- End Header -->
+
+  <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>&nbsp;</h2>
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#" onclick="return false">Mentor</a></li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+  <!-- End Breadcrumbs Section -->
+
+  <main id="main">
+
+    <section id="doctors" class="doctors">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="dumpil">Catalog</h2>
+          <h2 class="tengah">Mentor Dialogika</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6" style="margin-bottom: 20px;  background: #fff;">
+            <div class="member d-flex align-items-start" >
+              <div class="pic"><img src="../assets/img/mentor/fanny.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Fanny Carolina</h4>
+                <span class="subtitle">Seorang <b>Professional MC dalam 15 tahun</b>. Saat ini masih aktif menjadi MC di event-event besar di Yogyakarta.</span>
+                <p>
+                  <span class="badge rounded-pill bg-success">Active</span>
+                  <span class="badge rounded-pill bg-dark">Master of Ceremony</span>
+                  <span class="badge rounded-pill bg-primary">Moderator</span>
+                  <span class="badge rounded-pill bg-secondary">Event Organizer</span>
+                  <span class="badge rounded-pill bg-info">Model</span>
+                  <span class="badge rounded-pill bg-warning">Protokoler</span>
+                  <span class="badge rounded-pill bg-light">Wedding</span>
+                </p>
+                <div class="social">
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                </div>
+                <a href="fanny.html" class="bikini-btn" style="">Learn From Her</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" style="margin-bottom: 20px;  background: #fff;">
+            <div class="member d-flex align-items-start" >
+              <div class="pic"><img src="../assets/img/mentor/oka.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Oka Fahreza</h4>
+                <span class="subtitle">Seorang <b>Presenter Jogja TV</b> dan salah satu Master of Ceremony Terbaik di Yogyakarta hingga saat ini.</span>
+                <p>
+                  <span class="badge rounded-pill bg-success">Active</span>
+                  <span class="badge rounded-pill bg-dark">TV Presenter</span>
+                  <span class="badge rounded-pill bg-warning">Master Ceremony</span>
+                  <span class="badge rounded-pill bg-primary">Wedding</span>
+                  <span class="badge rounded-pill bg-secondary">Protokoler</span>
+                  <span class="badge rounded-pill bg-danger"></span>
+                  <span class="badge rounded-pill bg-info">Moderator</span>
+                </p>
+                <div class="social">
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                </div>
+                <a href="oka.html" class="bikini-btn" style="">Learn From Him</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" style="margin-bottom: 20px;  background: #fff;">
+            <div class="member d-flex align-items-start" >
+              <div class="pic"><img src="../assets/img/mentor/atik.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Atik Fauzia</h4>
+                <span class="subtitle">Seorang <b>Presenter Jogja TV</b> dan sampai saat ini masih aktif menjadi MC dan Moderator acara-acara protokoler dan event.</span>
+                <p>
+                  <span class="badge rounded-pill bg-danger">Maternity Leave</span>
+                  <span class="badge rounded-pill bg-dark">TV Presenter</span>
+                  <span class="badge rounded-pill bg-warning">Master Ceremony</span>
+                  <span class="badge rounded-pill bg-primary">Moderator</span>
+                  <span class="badge rounded-pill bg-secondary">Event Organizer</span>
+                  <span class="badge rounded-pill bg-danger"></span>
+                  <span class="badge rounded-pill bg-info"></span>
+                </p>
+                <div class="social">
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                </div>
+                <a href="atik.html" class="bikini-btn" style="">Learn From Her</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" style="margin-bottom: 20px;  background: #fff;">
+            <div class="member d-flex align-items-start" >
+              <div class="pic"><img src="../assets/img/mentor/bilal.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Teuku Bilal</h4>
+                <span class="subtitle">Seorang Founder Bincang Bilal dan <b>National Trainer Certified</b> dari BNSP, yang telah mengisi lebih dari 70 webinar dengan 200 Jam Terbang.</span>
+                <p>
+                  <span class="badge rounded-pill bg-success">Active</span>
+                  <span class="badge rounded-pill bg-dark">Certified</span>
+                  <span class="badge rounded-pill bg-warning">Trainer</span>
+                  <span class="badge rounded-pill bg-primary">Public Speaker</span>
+                  <span class="badge rounded-pill bg-secondary"></span>
+                  <span class="badge rounded-pill bg-danger"></span>
+                  <span class="badge rounded-pill bg-info"></span>
+                </p>
+                <div class="social">
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-half"></i></a>
+                </div>
+                <a href="bilal.html" class="bikini-btn" style="">Learn From Him</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" style="margin-bottom: 20px;  background: #fff;">
+            <div class="member d-flex align-items-start" >
+              <div class="pic"><img src="../assets/img/mentor/adam.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Adam Pratama</h4>
+                <span class="subtitle">Adam sempat mengenyam sebagai seorang <b>Radio Announcer di Dreamers Radio ID, Tim Kreatif di Hard Rock dan Presenter di Binus TV</b> dan sampai saat ini masih aktif menjadi MC di event-event.</span>
+                <p>
+                  <span class="badge rounded-pill bg-success">Active</span>
+                  <span class="badge rounded-pill bg-dark">Radio Announcer</span>
+                  <span class="badge rounded-pill bg-warning">Master Ceremony</span>
+                  <span class="badge rounded-pill bg-primary">Presenter</span>
+                  <span class="badge rounded-pill bg-secondary"></span>
+                  <span class="badge rounded-pill bg-danger"></span>
+                  <span class="badge rounded-pill bg-info"></span>
+                </p>
+                <div class="social">
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-half"></i></a>
+                </div>
+                <a href="adam.html" class="bikini-btn" style="">Learn From him</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" style="margin-bottom: 20px;  background: #fff;">
+            <div class="member d-flex align-items-start" >
+              <div class="pic"><img src="../assets/img/mentor/selvi.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Selvi Susanti</h4>
+                <span class="subtitle">Aktif berkarir sebagai <b>Voice Over & Dubber</b>, Selvi akan membagikan beragam teknik public speaking terutama terkait vokal dan mengatasi kegugupan disaat berbicara di ruang lingkup kerja.</span>
+                <p>
+                  <span class="badge rounded-pill bg-success">Active</span>
+                  <span class="badge rounded-pill bg-dark">Voice Over</span>
+                  <span class="badge rounded-pill bg-warning">Dubber</span>
+                  <span class="badge rounded-pill bg-primary">Master Ceremony</span>
+                  <span class="badge rounded-pill bg-secondary"></span>
+                  <span class="badge rounded-pill bg-danger"></span>
+                  <span class="badge rounded-pill bg-info"></span>
+                </p>
+                <div class="social">
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-half"></i></a>
+                </div>
+                <a href="selvi.html" class="bikini-btn" style="">Learn From Her</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" style="margin-bottom: 20px;  background: #fff;">
+            <div class="member d-flex align-items-start" >
+              <div class="pic"><img src="../assets/img/mentor/ningsih.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ningsih Susilawati</h4>
+                <span class="subtitle">Berkarir sebagai seseorang bertanggung jawab atas komunikasi internal di perusahaan multinasional. Ningsih akan membagikan pengalaman bagaimana mengatasi kesulitan public speaking ditingkat perusahaan.</span>
+                <p>
+                  <span class="badge rounded-pill bg-success">Active</span>
+                  <span class="badge rounded-pill bg-dark">Corporate</span>
+                  <span class="badge rounded-pill bg-warning">Consultant</span>
+                  <span class="badge rounded-pill bg-primary">Enterprise</span>
+                  <span class="badge rounded-pill bg-secondary"></span>
+                  <span class="badge rounded-pill bg-danger"></span>
+                  <span class="badge rounded-pill bg-info"></span>
+                </p>
+                <div class="social">
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-half"></i></a>
+                </div>
+                <a href="ningsih.html" class="bikini-btn" style="">Learn From Her</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" style="margin-bottom: 20px;  background: #fff;">
+            <div class="member d-flex align-items-start" >
+              <div class="pic"><img src="../assets/img/mentor/tiya.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Husnul Fatiyah</h4>
+                <span class="subtitle">Salah satu mentor favorit di Dialogika, ka Tiya memiliki beragam pengalaman public speaking dan juga seorang dosen aktif di Jambi.</span>
+                <p>
+                  <span class="badge rounded-pill bg-success">Active</span>
+                  <span class="badge rounded-pill bg-dark">Dosen</span>
+                  <span class="badge rounded-pill bg-warning">Educator</span>
+                  <span class="badge rounded-pill bg-primary">English</span>
+                  <span class="badge rounded-pill bg-secondary"></span>
+                  <span class="badge rounded-pill bg-danger"></span>
+                  <span class="badge rounded-pill bg-info">Fun</span>
+                </p>
+                <div class="social">
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-half"></i></a>
+                </div>
+                <a href="tiya.html" class="bikini-btn" style="">Learn From Her</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" style="margin-bottom: 20px;  background: #fff;">
+            <div class="member d-flex align-items-start" >
+              <div class="pic"><img src="../assets/img/mentor/dinar.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dinar Ahadi</h4>
+                <span class="subtitle">Dinar adalah seorang <b>Public Speaker Aktif</b> hingga saat ini, penulis buku dan seorang entrepreneur.</span>
+                <p>
+                  <span class="badge rounded-pill bg-success">Active</span>
+                  <span class="badge rounded-pill bg-dark">Entrepreneur</span>
+                  <span class="badge rounded-pill bg-warning">Writer</span>
+                  <span class="badge rounded-pill bg-primary">Speaker</span>
+                  <span class="badge rounded-pill bg-secondary"></span>
+                  <span class="badge rounded-pill bg-danger"></span>
+                  <span class="badge rounded-pill bg-info"></span>
+                </p>
+                <div class="social">
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-half"></i></a>
+                </div>
+                <a href="dinar.html" class="bikini-btn" style="">Learn From Him</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" style="margin-bottom: 20px;  background: #fff;">
+            <div class="member d-flex align-items-start" >
+              <div class="pic"><img src="../assets/img/mentor/bima.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Bima Baskara</h4>
+                <span class="subtitle">Seorang professional yang sering diundang ke kampus-kampus untuk berbicara terkait analisis ekonomi Bima akan sharing juga bagaimana berbicara secara professional dihadapan orang-orang penting baik di jajaran kampus ataupun para pejabat.</span>
+                <p>
+                  <span class="badge rounded-pill bg-success">Active</span>
+                  <span class="badge rounded-pill bg-dark">Analyze</span>
+                  <span class="badge rounded-pill bg-warning">Economic</span>
+                  <span class="badge rounded-pill bg-primary">Speaker</span>
+                  <span class="badge rounded-pill bg-secondary"></span>
+                  <span class="badge rounded-pill bg-danger"></span>
+                  <span class="badge rounded-pill bg-info"></span>
+                </p>
+                <div class="social">
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
+                  <a href="" onclick="return false;"><i class="bi bi-star-half"></i></a>
+                </div>
+                <a href="bima.html" class="bikini-btn" style="">Learn From Him</a>
+              </div>
+            </div>
+          </div>
+            
+          </div>
+      </div>
+    </section>
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Frequently <span style="color: #9e0035;">Asked</span> Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <span class="badge rounded-pill bg-blues">How?</span>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Bagaimana sistem pengajaran Public Speaking di Dialogika? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Sistem pembelajaran yang baik adalah <b>disaat Anda diberikan ruang untuk berlatih dan salah BERULANG KALI,</b> bukan mendengarkan teori-teori. Dialogika memberikan akses dan keleluasaan untuk berlatih sepanjang berjalannya kelas. Bahkan setelah selesai kelas, Dialogika juga memberikan kesempatan untuk Anda bertanya dengan mentor-mentor yang ada di Dialogika.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Bagaimana cara Saya tahu bahwa ada peningkatan didalam public speaking Saya?  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Disetiap kali Anda berlatih, <b>mentor akan memberikan Anda Feedback</b> secara langsung mengenai penampilan Anda. Dari sana Anda akan mengerti peningkatan yang Anda dapatkan setiap kali pertemuannya.
+                </p>
+              </div>
+            </li>
+
+            <span class="badge rounded-pill bg-blues">What?</span>
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Apakah ada Garansi untuk hasilnya?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Kami menyediakan Garansi untuk beragam program pembelajaran yang kami miliki, mulai dari Basic Public Speaking, Presentasi, MC, hingga Pitching. Apabila Anda tidak merasa mendapatkan perubahan bersama kami. Anda <b>GRATIS mengulang kelas TANPA DIPUNGUT BIAYA</b> sepeser pun.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Apakah Anda (Dialogika) pernah menangani semua jenis profesi client? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>Jika Anda serius ingin meningkatkan kemampuan Public Speaking Anda, dan butuh bantuan kami? Kami bisa membantu Anda.</p>
+
+                <p>Anda seorang introvert dan Anda ingin berani berbicara, dan butuh bantuan kami? Kami bisa membantu Anda.</p>
+
+                <p>Trauma buruk menghantui Anda, tampil dihadapan banyak orang bukanlah diri Anda yang sebenarnya. Tetapi Anda tahu bahwa Anda perlu menyelesaikan masalah tersebut, Dan Anda butuh bantuan kami? Kami bisa membantu Anda.</p>
+
+                <p>Umur Anda tidak lagi muda, jabatan Anda diperusahaan atau instansi pemerintah cukup tinggi. Gugup bukan masalah Anda namun Anda tidak bisa memotivasi bawahan Anda, bicara Anda cenderung melompat-lompat membuat karyawan Anda tidak bisa berkerja sesuai ekspektasi Anda. Kami bisa membantu Anda.</p>
+
+                <p>Anda seorang pengusaha sukses, Anda sering diminta berbicara dihadapan banyak orang. Tetapi Anda merasa bahwa apa yang didalam pikiran Anda tidak sesuai apa yang mulut Anda ingin katakan, Anda butuh kami? Kami Bisa membantu Anda.</p>
+
+                <p>Saat ini Anda hampir lulus kuliah di Jurusan Kedokteran tetapi karena lidah Anda Jawa, Anda cenderung Medhok dalam berbicara dan itu terdengar kurang profesional. Anda butuh bantuan? Kami bisa membantu Anda.</p>
+
+                <p>Tidak peduli apapun profesi Anda saat ini, pelajar, mahasiswa, freshgraduate, karyawan, profesional, freelancer, pimpinan, pengusaha hingga kader partai. Jika Anda ingin meningkatkan kemampuan Public Speaking, punya masalah di dalam berkomunikasi ataupun sedikit terkait masalah diri Anda. Kami siap membantu mengatasi masalah Anda.</p>
+              </div>
+            </li>
+
+            <span class="badge rounded-pill bg-blues">Why?</span>
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Mengapa Dialogika merupakan lembaga pengajaran Public Speaking terbaik? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Benar ada beragam pelatihan Public Speaking dan tentunya banyak sekali bukan? Ketimbang harus kami paparkan alasannya lebih baik kami berikan saja Angka. Karena Angka tidak pernah berbohong.
+                </p>
+                <ul>
+                  <li>Total Client 318 dan terus bertambah setiap harinya.</li>
+                  <li>Dari 12 jenis profesi yang berbeda.</li>
+                  <li>Review Positif 4.9 dari 5 Stars di Google</li>
+                  <li>Umur perusahaan 2 tahun</li>
+                </ul>
+                <p>Jika Anda memiliki visi yang sama dengan Dialogika silahkan perhitungkan Dialogika sebagai teman untuk mengisi sejarah hidup Anda yang luar biasa.</p>
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3><img src="../assets/img/logo.png" class="footer-logo" alt="Dialogika" style="max-height: 20px;" /></h3>
+              <p>
+                Kami membantu Anda untuk mampu menyampaikan "value diri anda", dengan cara membantu anda menguasai Public Speaking, Growth Mindset, Building Habit hingga Bahasa Inggris.<br><br>
+                <strong>Phone:</strong> +62 851-6299-2597<br>
+                <strong>Email:</strong> hello@dialogika.co<br>
+              </p>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> 
+                  <a href="https://talent.dialogika.co" onclick="return false;">Dialogika Intern</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i> 
+                  <a href="https://club.dialogika.co" onclick="return false;">Dialogika Club</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i> 
+                  <a href="https://blog.dialogika.co" onclick="return false;">Dialogika Blog</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i> 
+                  <a href="https://event.dialogika.co" onclick="return false;">Dialogika Event</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i> 
+                  <a href="https://course.dialogika.co" onclick="return false;">Dialogika eCourse</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> 
+                  <a href="basic-plus.html">Basic Plus</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i> 
+                  <a href="presentation-class.html">Presentation</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i> 
+                  <a href="pro-class.html">Pro Class</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i> 
+                  <a href="english-class.html">English Class
+                  </a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i> 
+                  <a href="private-class.html">Private Class</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Join Our Newsletter</h4>
+              <p>Silahkan tinggalkan email dibawah ini kemudian klik tombol subscribe</p>
+              <form action="javascript:void" role="form" id="subcriptions" method="post">
+                <input type="email" name="Surel" placeholder="Email" required><input type="submit" value="Subscribe" onclick="Subcription()">
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-md-flex py-4">
+
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Dialogika</span></strong>. All Rights Reserved
+          </div>
+          
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="https://link.dialogika.co/facebook" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://link.dialogika.co/instagram" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://link.dialogika.co/wasap-2597-dialogika-co" class="google-plus"><i class="bx bxl-whatsapp"></i></a>
+          <a href="https://link.dialogika.co/linkedin" class="linkedin"><i class="bx bxl-linkedin"></i></i></a>
+        </div>
+      </div>
+    </footer>
+  <!-- End Footer -->
+
+  <!-- <div id="preloader"></div> -->
+    <!-- <a href="#appointment" class="back-to-top d-flex align-items-center justify-content-center">
+      <i class="bx bx-tada bxl-whatsapp"></i>
+    </a> -->
+
+
+  <!-- ======= Offcanvas ======= -->
+    <div class="offcanvas offcanvas-start section-bg" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="faq" >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+        </h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body faq" style="background:none;">
+        <div class="section-title"><h2 class="dumpil">F.A.Q</h2></div>
+
+        <div class="faq-list" style="padding:0;">
+          <ul>
+
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" href="#faq-list-1" class="collapse">Apa itu Kelas Online - Basic Plus? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse" data-parent=".faq-list">
+                <p>
+                  Sebuah kelas yang memiliki fokus untuk berlatih menyampaikan pembicaraan dengan rapih, tenang, nyaman dan bisa ditangkap dengan baik.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" href="#faq-list-2" class="collapsed">Wow menarik! Apa aja kelebihannya? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                <p>
+                  Selain kelasnya berjalan selama satu bulan, di kelas ini lebih banyak prakteknya.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" href="#faq-list-3" class="collapsed">Ngomong<sup>2</sup>, Maksimal kuota perkelas itu berapa ya? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                <p>
+                  Satu kelas maksimal isi 10 orang.
+                </p>
+              </div>
+            </li>
+
+            <li class="more-faq " data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" href="#faq-list-4" class="collapsed">Berapa lama durasi disetiap pertemuannya? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+                <p>
+                  90 menit hingga 100 menit. Waktu yang lama diberikan agar member bisa terus menerus untuk praktek dan praktek.
+                </p>
+              </div>
+            </li>
+
+            <li class="more-faq " data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" href="#faq-list-6" class="collapsed">Wah keren nih banyak praktek. Berapa lama program berlangsung? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-6" class="collapse" data-parent=".faq-list">
+                <p>
+                  Selama satu bulan. Dengan jumlah pertemuan sebanyak 7x. 
+                </p>
+              </div>
+            </li>
+
+            <li class="more-faq " data-aos="fade-up" data-aos-delay="600">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" href="#faq-list-7" class="collapsed">Cara daftarnya gimana? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-7" class="collapse" data-parent=".faq-list">
+                <p>
+                  <b>Cukup mentransfer ka dan menghubungi admin.</b> 
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  <!-- End Offcanvas -->
+
+  <!-- ======= Modal Nofication ======= -->
+    <div class="modal fade" id="notifications" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Pesan telah dikirimkan, apabila <b>anda tidak langsung ter-redirect</b> ke Aplikasi Whatsapp atau Whatsapp Web silahkan pencet tombol Redirect dibawah ini</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius:25px;background: #cccccc;">Close</button>
+            <a role="button" href="javascript:void" class="btn btn-primary send_contact" style="border-radius:25px;background: #0B2B6A;">Redirect</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- End Modal -->
+
+  <!-- ======= Modal Subcription ======= -->
+    <div class="modal fade" id="subcription-modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>Terima kasih sudah melakukan subcription dengan email anda, nantikan update blog,berita,diskonan dari Dialogika</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius:25px;background: #cccccc;">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- End Modal -->
+
+
+  <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter.js"></script>
+    <script src="../assets/vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/whatsapp.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $('#submits').attr('disabled', true);
+        $('#myForm').change(function () {
+            if ($('#names').val() != '' && $('#works').val() != '' && $('#locations').val() != '' && $('#whatsapps').val() != '') {
+                $('#submits').attr('disabled', false);
+            } else {
+                $('#submits').attr('disabled', true);
+            }
+        });
+      });
+      // get date
+      var today = new Date();
+      var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+      var time = today.getHours() + ":" + today.getMinutes();
+      var dateTime = date+'    '+time;
+      document.getElementById("timestamp").innerHTML = dateTime;
+    </script>
+
+</body>
+
+</html>
