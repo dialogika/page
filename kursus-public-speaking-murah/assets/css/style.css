@@ -1241,10 +1241,10 @@ span.rounded-yellow {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-/*section {
+section {
   padding: 60px 0;
   overflow: hidden;
-}*/
+}
 
 .section-bg {
   background-color: #f1f7fd;
@@ -1842,7 +1842,7 @@ span.rounded-yellow {
 # About
 --------------------------------------------------------------*/
 .about img {
-
+ background: cover;
 }
 
 .about .icon-boxes h4 {
@@ -1914,7 +1914,7 @@ span.rounded-yellow {
 }
 
 .about .video-box {
-  background: url("../img/about.jpg") center center no-repeat;
+  background: url("https://dialogika.co/assets/img/about.jpg") center center no-repeat;
   background-size: cover;
   min-height: 500px;
   
