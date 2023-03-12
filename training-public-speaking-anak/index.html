@@ -569,6 +569,62 @@
       </div>
     </div>
   </div><!-- End Modal -->
+
+  <!-- ======= Toast Ask Program ======= -->
+  <div class="toast toast-atas" id="askToast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">+<span id="tigapeserta"></span> Calon Peserta Bertanya</strong>
+      <small><span id="tigamenit"></span> menit yang lalu</small>
+      <button type="button" class="btn-close" id="closeAsk" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Gratis konsultasi program
+    </div>
+    <script>
+      document.getElementById("tigapeserta").innerHTML = Math.floor(Math.random() * 4)+1;
+      document.getElementById("tigamenit").innerHTML = Math.floor(Math.random() * 4);
+    </script>
+  </div><!-- End Toast Sold Program -->
+
+  <!-- ======= Toast Ask Program ======= -->
+  <div class="toast toast-paling-atas text-bg-success" id="soldToast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header" style="background-color: #009961;">
+      <strong class="me-auto text-light">+<span id="duaclosing"></span> Peserta Telah Mendaftar</strong>
+      <small class="text-warning">Sisa <span id="limaseat"></span> Seat</small>
+      <button type="button" class="btn-close btn-close-white" id="closeSold" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <script>
+      document.getElementById("duaclosing").innerHTML = Math.floor(Math.random() * 3)+1;
+      document.getElementById("limaseat").innerHTML = Math.floor(Math.random() * 6)+1;
+    </script>
+  </div><!-- End Toast Sold Program -->
+
+  <!-- Toast Pop Up -->
+  <script>
+    window.addEventListener("load", function(){
+        setTimeout(
+            function open(event){
+                document.querySelector("#askToast").style.display = "block";
+            },2000),
+        setTimeout(
+          function open(event){
+            document.querySelector("#soldToast").style.display = "block";
+          }, 8000)
+    });
+  </script>
+
+  <script>
+    document.querySelector("#closeAsk").addEventListener("click", function(){
+        document.querySelector("#askToast").style.display = "none";
+    });
+  </script>
+
+  <script>
+    document.querySelector("#closeSold").addEventListener("click", function(){
+        document.querySelector("#soldToast").style.display = "none";
+    });
+  </script>
+  <!-- /Toast Pop Up -->
   
 
   <!-- Vendor JS Files -->
