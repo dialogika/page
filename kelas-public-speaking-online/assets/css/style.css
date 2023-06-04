@@ -12646,17 +12646,25 @@ a{
 }
 
 @keyframes pulsing {
-  to {
-    box-shadow: 0 0 0 10px rgba(232, 76, 61, 0);
+  0% {
+    transform:scale(0.9);
+  }
+  70% {
+    transform:scale(1);
+    box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+  }
+    100% {
+      transform:scale(0.9);
+    box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
   }
 }
 
 .contact_icon {
-  background-color: #42db87;
+  background: linear-gradient(to right,#0b2b6a,#2279c9);
   color: #fff;
   width: 60px;
   height: 60px;
-  font-size:30px;
+  font-size:50px;
   border-radius: 50px;
   text-align: center;
   box-shadow: 2px 2px 3px #999;
@@ -12679,7 +12687,7 @@ a{
 
 .text_icon {
   margin-top: 8px;
-  color: #707070;
+  color: #17549d;
   font-size: 13px;
 }
 /* End Of Floating Button Whatsapp */
