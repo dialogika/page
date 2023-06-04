@@ -1616,3 +1616,14 @@ span.rounded-yellow {
   color: #ffffff;
   background: #0B2B6A;
 }
+/* maps */
+.venue iframe{
+  width: 700px;
+  height: 350px;
+}
+@media only screen and (max-width: 600px) {
+  .venue iframe {
+      width: 300px;
+      height: 350px;
+    }
+}
