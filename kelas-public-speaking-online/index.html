@@ -44,6 +44,7 @@
   <link rel="stylesheet" href="assets/css/global.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/vendor/epora/css/font.css" />
+  <!-- <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css"> -->
 
   <!-- tambahan -->
   <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.css" />
@@ -197,13 +198,41 @@
       style="display: none; visibility: hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <div class="floating_btn">
+  <!-- <div class="floating_btn">
     <a target="_blank" href="https://link.dialogika.co/kelas-online">
       <div class="contact_icon">
         <i class="bx bxl-whatsapp bx-tada"></i>
       </div>
     </a>
+  </div> -->
+
+  <div id="hiddenDiv" class="floating_btn d-none">
+    <a target="" id="myButton" href="#in-about-1">
+      <div class="contact_icon">
+        <i class='bx bxs-down-arrow-alt'></i>
+      </div>
+    </a>
   </div>
+
+  <script>
+  // Mengambil elemen tombol berdasarkan id
+  var btn = document.getElementById("myButton");
+
+  // Menambahkan event listener untuk "click" event
+  btn.addEventListener("click", function() {
+    // Mengatur style display menjadi 'none' untuk menyembunyikan tombol
+    btn.style.display = "none";
+  });
+
+  // Fungsi yang akan memunculkan div
+  function showDiv() {
+    // Menghapus kelas 'd-none' dari div
+    document.getElementById('hiddenDiv').classList.remove('d-none');
+  }
+
+  // Mengatur timeout untuk menjalankan fungsi showDiv setelah 30 detik
+  setTimeout(showDiv, 4500); // 30000 milidetik = 30 detik
+  </script>
 
   <!-- ======= Header ======= -->
   <main-header></main-header>
@@ -232,18 +261,17 @@
       <div class="in-banner-text-content-4 d-flex justify-content-end">
         <div class="in-banner-text-4 headline pera-content">
           <div class="banner-slug text-uppercase position-relative">
-            <span>Kelas Online</span>
+            <span>Kelas Public Speaking Online</span>
           </div>
           <h1>
-            Kelas
-            <span class="in-text-gradiant">Basic Public</span> Speaking
+            Bangun <span class="in-text-gradiant">Kepercayaan Diri</span> Dalam <span class="in-text-gradiant">Satu Bulan</span> Dengan Metode <span class="in-text-gradiant">Online</span>
           </h1>
           <p>
             Atasi Rasa Takut Bicara Dengan Kelas Public Speaking <b>Selama Sebulan</b> dan dapatkan <b>Garansi Mengulang
               Kelas,</b> Dibimbing secara langsung oleh Mentor dan dapat Recording kelas saat belajar.
           </p>
           <div class="in-btn-1">
-            <a href="#in-about-1">Get Start Now</a>
+            <a data-bs-toggle="modal" data-bs-target="#myModal" style="color:#fff;">Check Video Pembelajarannya</a>
           </div>
         </div>
       </div>
@@ -263,7 +291,7 @@
         </p>
       </div>
       <div class="in-testimonial-content-4 position-relative">
-        <span class="testimonial-bg position-absolute"><img src="assets/img/testimonial-bg.jpg" alt=""
+        <span class="testimonial-bg position-absolute"><img src="assets/img/testimonial-bg.jpg" alt="Kelas Public Speaking Online"
             style="border-radius:8px;height: 525px;width: 971px;transform: rotateY(180deg)"></span>
         <div class="in-testimonial-slider-area-4">
           <div class="in-testimonial-slider-4">
@@ -280,7 +308,7 @@
                 <div class="inner-img">
                   <img
                     src="https://lh3.googleusercontent.com/a-/AD_cMMSu4-B0d36Vi0gI1ld2Fd-Dc4dtefV1taCx1jjZ=w72-h72-p-c0x00000000-rp-mo-br100"
-                    alt="">
+                    alt="Kelas Public Speaking Online">
                 </div>
                 <div class="author-meta headline">
                   <h3>Diani R. Rahayu</h3>
@@ -300,7 +328,7 @@
                 <div class="inner-img">
                   <img
                     src="https://lh3.googleusercontent.com/a-/AD_cMMSONzuKhe16AlX1iasoRg3qjA_BrP0GgItBs1nl=w72-h72-p-c0x00000000-rp-mo-br100"
-                    alt="">
+                    alt="Kelas Public Speaking Online">
                 </div>
                 <div class="author-meta headline">
                   <h3>Ananda Octa Khairina</h3>
@@ -321,7 +349,7 @@
                 <div class="inner-img">
                   <img
                     src="https://lh3.googleusercontent.com/a-/AD_cMMQhATyFYojYrCxFtJRwzVPtSDeJgTA4THSrhxQb=w72-h72-p-c0x00000000-rp-mo-br100"
-                    alt="">
+                    alt="Kelas Public Speaking Online">
                 </div>
                 <div class="author-meta headline">
                   <h3>Devina Widya</h3>
@@ -342,7 +370,7 @@
                 <div class="inner-img">
                   <img
                     src="https://lh3.googleusercontent.com/a-/AD_cMMR18RbeJvgIjXhBebLLMaeAcQslKrEHN-q91QcZkA=w72-h72-p-c0x00000000-rp-mo-ba4-br100"
-                    alt="">
+                    alt="Kelas Public Speaking Online">
                 </div>
                 <div class="author-meta headline">
                   <h3>Isdarti Jamali</h3>
@@ -362,7 +390,7 @@
                 <div class="inner-img">
                   <img
                     src="https://lh3.googleusercontent.com/a-/AD_cMMSTSgIbXt5yR6B3DOVq2TRPju1prHkA5BUrZY6C5Ng=w72-h72-p-c0x00000000-rp-mo-br100"
-                    alt="">
+                    alt="Kelas Public Speaking Online">
                 </div>
                 <div class="author-meta headline">
                   <h3>Jo Olivia</h3>
@@ -383,7 +411,7 @@
                 <div class="inner-img">
                   <img
                     src="https://lh3.googleusercontent.com/a-/AD_cMMSx9tunUlZSu5i7eTnieI4GGQ9sGQX8NbhlKGKPTw=w72-h72-p-c0x00000000-rp-mo-br100"
-                    alt="">
+                    alt="Kelas Public Speaking Online">
                 </div>
                 <div class="author-meta headline">
                   <h3>Mara Novema</h3>
@@ -403,42 +431,42 @@
       <div class="in-sponsor-slider">
         <div class="in-sponsor-item">
           <div class="inner-img">
-            <img src="assets/img/corporate/uad.png" alt="" />
+            <img src="assets/img/corporate/uad.png" alt="Kelas Public Speaking Online" />
           </div>
         </div>
         <div class="in-sponsor-item">
           <div class="inner-img">
-            <img src="assets/img/corporate/uin-suka.png" alt="" />
+            <img src="assets/img/corporate/uin-suka.png" alt="Kelas Public Speaking Online" />
           </div>
         </div>
         <div class="in-sponsor-item">
           <div class="inner-img">
-            <img src="assets/img/corporate/aveon.png" alt="" />
+            <img src="assets/img/corporate/aveon.png" alt="Kelas Public Speaking Online" />
           </div>
         </div>
         <div class="in-sponsor-item">
           <div class="inner-img">
-            <img src="assets/img/corporate/smk-dr-sutomo-temanggung.png" alt="" />
+            <img src="assets/img/corporate/smk-dr-sutomo-temanggung.png" alt="Kelas Public Speaking Online" />
           </div>
         </div>
         <div class="in-sponsor-item">
           <div class="inner-img">
-            <img src="assets/img/corporate/polita.png" alt="" />
+            <img src="assets/img/corporate/polita.png" alt="Kelas Public Speaking Online" />
           </div>
         </div>
         <div class="in-sponsor-item">
           <div class="inner-img">
-            <img src="assets/img/corporate/mercu.png" alt="" />
+            <img src="assets/img/corporate/mercu.png" alt="Kelas Public Speaking Online" />
           </div>
         </div>
         <div class="in-sponsor-item">
           <div class="inner-img">
-            <img src="assets/img/corporate/amikom.png" alt="" />
+            <img src="assets/img/corporate/amikom.png" alt="Kelas Public Speaking Online" />
           </div>
         </div>
         <!-- <div class="in-sponsor-item">
             <div class="inner-img">
-              <img src="assets/img/corporate/ugm.png" alt="" />
+              <img src="assets/img/corporate/ugm.png" alt="Kelas Public Speaking Online" />
             </div>
           </div> -->
       </div>
@@ -448,7 +476,7 @@
   <!-- Start of About section ============================================= -->
   <section id="in-about-1" class="in-about-section-1 position-relative">
     <div class="in-about-bg position-absolute">
-      <!-- <img src="assets/img/bg/ab-bg.jpg" alt=""> -->
+      <!-- <img src="assets/img/bg/ab-bg.jpg" alt="Kelas Public Speaking Online"> -->
     </div>
     <div class="container">
       <div class="in-about-content-1">
@@ -549,7 +577,7 @@
               </div>
 
               <div class="in-btn-1 wow fadeInUp" data-wow-delay="850ms" data-wow-duration="1000ms">
-                <a href="#in-get-quote" target="__blank">Daftar Sekarang</a>
+                <a href="#pricing">Daftar Sekarang</a>
               </div>
             </div>
           </div>
@@ -799,7 +827,7 @@
                     <div class="inner-author-quote d-flex justify-content-between align-items-center">
                       <div class="inner-author d-flex align-items-center">
                         <div class="inner-img">
-                          <img src="assets/img/mentor/nurma.jpg" alt="">
+                          <img src="assets/img/mentor/nurma.jpg" alt="Kelas Public Speaking Online">
                         </div>
                         <div class="author-meta headline">
                           <h3>Shinta Nurma</h3>
@@ -820,7 +848,7 @@
                     <div class="inner-author-quote d-flex justify-content-between align-items-center">
                       <div class="inner-author d-flex align-items-center">
                         <div class="inner-img">
-                          <img src="assets/img/mentor/tiya.jpg" alt="">
+                          <img src="assets/img/mentor/tiya.jpg" alt="Kelas Public Speaking Online">
                         </div>
                         <div class="author-meta headline">
                           <h3>Husnul Fatiya</h3>
@@ -842,7 +870,7 @@
                     <div class="inner-author-quote d-flex justify-content-between align-items-center">
                       <div class="inner-author d-flex align-items-center">
                         <div class="inner-img">
-                          <img src="assets/img/mentor/atik.jpg" alt="">
+                          <img src="assets/img/mentor/atik.jpg" alt="Kelas Public Speaking Online">
                         </div>
                         <div class="author-meta headline">
                           <h3>Atik Fauzia</h3>
@@ -863,7 +891,7 @@
                     <div class="inner-author-quote d-flex justify-content-between align-items-center">
                       <div class="inner-author d-flex align-items-center">
                         <div class="inner-img">
-                          <img src="assets/img/mentor/bilal.jpg" alt="">
+                          <img src="assets/img/mentor/bilal.jpg" alt="Kelas Public Speaking Online">
                         </div>
                         <div class="author-meta headline">
                           <h3>Teuku Bilal</h3>
@@ -884,7 +912,7 @@
                     <div class="inner-author-quote d-flex justify-content-between align-items-center">
                       <div class="inner-author d-flex align-items-center">
                         <div class="inner-img">
-                          <img src="assets/img/mentor/fajar.jpg" alt="">
+                          <img src="assets/img/mentor/fajar.jpg" alt="Kelas Public Speaking Online">
                         </div>
                         <div class="author-meta headline">
                           <h3>Muhammad Fajar</h3>
@@ -905,7 +933,7 @@
                     <div class="inner-author-quote d-flex justify-content-between align-items-center">
                       <div class="inner-author d-flex align-items-center">
                         <div class="inner-img">
-                          <img src="assets/img/mentor/adit.jpg" alt="">
+                          <img src="assets/img/mentor/adit.jpg" alt="Kelas Public Speaking Online">
                         </div>
                         <div class="author-meta headline">
                           <h3>Aditya Dyah</h3>
@@ -926,7 +954,7 @@
                     <div class="inner-author-quote d-flex justify-content-between align-items-center">
                       <div class="inner-author d-flex align-items-center">
                         <div class="inner-img">
-                          <img src="assets/img/mentor/audi.jpg" alt="">
+                          <img src="assets/img/mentor/audi.jpg" alt="Kelas Public Speaking Online">
                         </div>
                         <div class="author-meta headline">
                           <h3>Audie Ihza</h3>
@@ -961,7 +989,7 @@
                   <div class="in-team-item position-relative">
                     <div class="in-team-img-text d-flex align-items-center">
                       <div class="in-team-img">
-                        <img src="assets/img/potrait/ron.jpg" alt="">
+                        <img src="assets/img/potrait/ron.jpg" alt="Kelas Public Speaking Online">
                       </div>
                       <div class="in-team-text headline">
                         <h3><a onclick="return false;">Ron Ashrovy</a></h3>
@@ -977,7 +1005,7 @@
                   <div class="in-team-item position-relative">
                     <div class="in-team-img-text d-flex align-items-center">
                       <div class="in-team-img">
-                        <img src="assets/img/potrait/zai.jpg" alt="">
+                        <img src="assets/img/potrait/zai.jpg" alt="Kelas Public Speaking Online">
                       </div>
                       <div class="in-team-text headline">
                         <h3><a onclick="return false;">Zaitun Olivia</a></h3>
@@ -993,7 +1021,7 @@
                   <div class="in-team-item position-relative">
                     <div class="in-team-img-text d-flex align-items-center">
                       <div class="in-team-img">
-                        <img src="assets/img/potrait/elsa.jpg" alt="">
+                        <img src="assets/img/potrait/elsa.jpg" alt="Kelas Public Speaking Online">
                       </div>
                       <div class="in-team-text headline">
                         <h3><a onclick="return false;">Dwiya Elsa</a></h3>
@@ -1010,7 +1038,7 @@
                   <div class="in-team-item position-relative">
                     <div class="in-team-img-text d-flex align-items-center">
                       <div class="in-team-img">
-                        <img src="assets/img/potrait/rindi.jpg" alt="">
+                        <img src="assets/img/potrait/rindi.jpg" alt="Kelas Public Speaking Online">
                       </div>
                       <div class="in-team-text headline">
                         <h3><a onclick="return false;">Wahyu Rindi</a></h3>
@@ -1056,7 +1084,7 @@
         <div class="in-slider-item">
           <div class="in-portfolio-item position-relative">
             <div class="inner-img">
-              <img src="assets/img/portfolio/porto1.jpg" alt="">
+              <img src="assets/img/portfolio/porto1.jpg" alt="Kelas Public Speaking Online">
             </div>
             <div class="inner-text headline position-absolute">
               <span class="port-category"><a href="#" tabindex="0">Offline Class</a></span>
@@ -1071,7 +1099,7 @@
         <div class="in-slider-item">
           <div class="in-portfolio-item position-relative">
             <div class="inner-img">
-              <img src="assets/img/portfolio/porto2.jpg" style="width: 100%;" alt="">
+              <img src="assets/img/portfolio/porto2.jpg" style="width: 100%;" alt="Kelas Public Speaking Online">
             </div>
             <div class="inner-text headline position-absolute">
               <span class="port-category"><a href="#" tabindex="0">Online Class</a></span>
@@ -1086,7 +1114,7 @@
         <div class="in-slider-item">
           <div class="in-portfolio-item position-relative">
             <div class="inner-img">
-              <img src="assets/img/portfolio/porto3.jpg" style="width: 100%" alt="">
+              <img src="assets/img/portfolio/porto3.jpg" style="width: 100%" alt="Kelas Public Speaking Online">
             </div>
             <div class="inner-text headline position-absolute">
               <span class="port-category"><a href="#" tabindex="0">Online Class</a></span>
@@ -1101,7 +1129,7 @@
         <div class="in-slider-item">
           <div class="in-portfolio-item position-relative">
             <div class="inner-img">
-              <img src="assets/img/portfolio/porto4.jpg" style="width: 100%" alt="">
+              <img src="assets/img/portfolio/porto4.jpg" style="width: 100%" alt="Kelas Public Speaking Online">
             </div>
             <div class="inner-text headline position-absolute">
               <span class="port-category"><a href="#" tabindex="0">Online Class</a></span>
@@ -1449,7 +1477,7 @@
                     <div class="col-lg-6 justify-content-center align-items-center">
                         <div class="in-faq-img-3 d-none d-md-block ">
                             <img src="https://media.istockphoto.com/id/1446595014/id/foto/pengusaha-muda-asia-yang-sukses-bekerja-dengan-smartphone-dan-laptop-untuk-menghubungi-klien.jpg?s=612x612&w=0&k=20&c=YS7zJq0XTEV8nsDDHDdcYzBDaP-bIOsPnhkEg8ZAMIM="
-                                class="" style="border-radius: 8px;" alt="">
+                                class="" style="border-radius: 8px;" alt="Kelas Public Speaking Online">
                         </div>
                     </div>
                 </div>
@@ -1462,7 +1490,7 @@
     <div class="container">
       <div class="in-get-quote-content position-relative">
         <span class="in-get-quote-img position-absolute wow fadeInRight" data-wow-delay="350ms"
-          data-wow-duration="1000ms"><img src="assets/img/about/cnt.png" alt="" /></span>
+          data-wow-duration="1000ms"><img src="assets/img/about/cnt.png" alt="Kelas Public Speaking Online" /></span>
         <div class="in-get-quote-form-content">
           <div class="in-section-title-1 headline">
             <div class="sub-title position-relative text-uppercase">
@@ -1528,6 +1556,33 @@
   <main-footer></main-footer>
   <!-- End Footer -->
 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg  modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="headline">
+            <div class="sub-title position-relative text-uppercase">
+              <span> Gambaran Kelas </span>
+            </div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/vPhhdWSKmNI?si=ajIgLX1yjzycUvnO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="in-btn-1">
+            <a href="#" data-bs-dismiss="modal">Daftar Kelasnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
@@ -1559,6 +1614,7 @@
   <script src="assets/js/jquery.nice-select.min.js"></script>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/whatsapp.js"></script>
+  <!-- <script src="assets/vendor/glightbox/js/glightbox.min.js"></script> -->
 
   <script type="text/javascript">
     /*** Mobile nav toggle */
