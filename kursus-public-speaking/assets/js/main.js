@@ -187,9 +187,46 @@
   });
 
   /**
+   * Clients Slider
+   */
+  new Swiper('.clients-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 60
+      },
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 80
+      },
+      992: {
+        slidesPerView: 6,
+        spaceBetween: 120
+      }
+    }
+  });
+
+
+  /**
    * Testimonials slider
    */
-  new Swiper('.testimonials-slider', {
+  new Swiper('.testimonials-slider',  {
     speed: 600,
     loop: true,
     autoplay: {
@@ -214,6 +251,165 @@
       }
     }
   });
+
+  /* end 8*/
+
+    new Swiper('.mentor-doctor', {
+    direction: 'vertical',
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+
+      1200: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      }
+    }
+  });
+  
+  /**
+   * Team slider
+   */
+  new Swiper('.in-team-slider-area', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+    nextEl: '.team_right_arrow',
+    prevEl: '.team_left_arrow',
+  }
+  });
+
+  /**
+   * Team slider
+   */
+  new Swiper('.testi', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+    nextEl: '.testi_right_arrow',
+    prevEl: '.testi_left_arrow',
+  }
+
+  });
+
+  /**
+   * Portofolio slider
+   */
+  new Swiper('.in-portfolio-content-2', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+    nextEl: '.testi_right_arrow',
+    prevEl: '.testi_left_arrow',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 50
+      }
+    }
+  });
+
+  /**
+   * Blog Post
+   */
+  new Swiper('.blog-post', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+    nextEl: '.testi_right_arrow',
+    prevEl: '.testi_left_arrow',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 50
+      }
+    }
+
+  });
+
+
+  
+
 
   /**
    * Initiate Pure Counter 
