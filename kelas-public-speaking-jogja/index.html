@@ -74,24 +74,19 @@
             });
           }
 
-          function SubForm() {
-            $.ajax({
-              url: "https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
-              type: "post",
-              data: $("#myForm").serializeArray(),
-              headers: {
-                accessKey: "b5216464a11be561ae0b40f9ed98ee90",
-                secretKey: "038c9369d3b221f2387c9d8f3f3e488d"
-              },
-              success: function () {
-                alert("Your Message Has Been Sent")
-                // $('#notifications').modal('show');
-              },
-              error: function () {
-                alert("There was an error :(")
-              }
-            });
-          }
+            function SubForm (){
+              $.ajax({
+                  url:"https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
+                  type:"post",
+                  data:$("#myForm").serializeArray(),
+                success: function(){
+                  alert("Anda Telah Mendaftar :)")
+                },
+                error: function(){
+                  alert("There was an error :(")
+                }
+              });
+            }
 
           function Subcription() {
             $.ajax({

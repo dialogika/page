@@ -55,24 +55,19 @@
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
   <script>
-    function SubForm() {
-      $.ajax({
-        url: "https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
-        type: "post",
-        data: $("#myForm").serializeArray(),
-        headers: {
-          accessKey: "b5216464a11be561ae0b40f9ed98ee90",
-          secretKey: "038c9369d3b221f2387c9d8f3f3e488d",
-        },
-        success: function () {
-          alert("Form Data Submitted :)");
-          // $('#notifications').modal('show');
-        },
-        error: function () {
-          alert("There was an error :(");
-        },
-      });
-    }
+      function SubForm (){
+        $.ajax({
+            url:"https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
+            type:"post",
+            data:$("#myForm").serializeArray(),
+          success: function(){
+            alert("Anda Telah Mendaftar :)")
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+        });
+      }
 
     function Subcription() {
       $.ajax({
