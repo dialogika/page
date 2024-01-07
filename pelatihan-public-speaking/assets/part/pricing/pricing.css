@@ -4,6 +4,11 @@
 # Pricing
 --------------------------------------------------------------*/
 
+.pricing {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(241,247,253,1) 100%);
+}
+
 .pricing h1,
 h2,
 h3,

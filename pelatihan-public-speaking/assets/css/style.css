@@ -501,7 +501,23 @@ h6 {
 #hero {
   width: 100%;
   height: 90vh;
-  background: url('https://criterionasia.com/wp-content/uploads/Recruiting-People-scaled.jpg') top center;
+/*  background: url('https://criterionasia.com/wp-content/uploads/Recruiting-People-scaled.jpg') top center;*/
+background-image: linear-gradient(
+  40deg,
+  hsl(359deg 81% 50%) 0%,
+  hsl(313deg 81% 41%) 8%,
+  hsl(266deg 82% 32%) 17%,
+  hsl(220deg 81% 23%) 25%,
+  hsl(245deg 67% 27%) 33%,
+  hsl(271deg 53% 31%) 42%,
+  hsl(297deg 39% 35%) 50%,
+  hsl(271deg 53% 31%) 58%,
+  hsl(245deg 67% 27%) 67%,
+  hsl(220deg 81% 23%) 75%,
+  hsl(201deg 88% 22%) 83%,
+  hsl(182deg 94% 21%) 92%,
+  hsl(164deg 100% 21%) 100%
+);
   background-size: cover;
   z-index: 2;
   margin-bottom: -200px;
@@ -528,6 +544,11 @@ h6 {
   margin: 10px 0 0 0;
   font-size: 24px;
   text-shadow: #7204cf 1px 1px 1px;
+}
+
+#hero img {
+    text-align: center;
+    width: 50%;
 }
 
 #hero .btn-get-started {
