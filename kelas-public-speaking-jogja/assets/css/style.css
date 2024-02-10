@@ -247,6 +247,7 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .navbar li {
@@ -270,6 +271,7 @@ h6 {
   transition: 0.3s;
   border-bottom: 2px solid #fff;
   padding: 5px 2px;
+  
 }
 
 .navbar a i,
@@ -298,7 +300,8 @@ h6 {
   opacity: 0;
   visibility: hidden;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  /*  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);*/
+  box-shadow: 0px 5px 16px -6px rgba(0, 0, 0, 0.8);
   transition: 0.3s;
 }
 
@@ -411,12 +414,84 @@ h6 {
   -moz-box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
 }
 
+.navbar-canvas .card-body.zero {
+  border-radius: 10px;
+  color:#aaaaaa;
+  background: #fff;
+  text-align:center;
+  border-color:#aaaaaa;
+}
+
 .navbar-canvas .offcanvas-header img.offcanvas-title {
   font-size: 30px;
   max-height: 30px;
   margin-left: 17px;
 }
 
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 20px 0;
+  background-color: #f1f7fd;
+  min-height: 40px;
+  margin-top: 140px;
+  color:#0B2B6A;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 130px;
+  }
+}
+
+.breadcrumbs h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs h2 {
+    margin: 0 0 10px 0;
+  }
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #6c757d;
+  content: "/";
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+
+  .breadcrumbs ol {
+    display: block;
+  }
+
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
 
 
 /*--------------------------------------------------------------
@@ -425,9 +500,10 @@ h6 {
 #hero {
   width: 100%;
   height: 90vh;
-  background: url('../img/hero.webp') top center;
+  background: url('https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/23/b9bb892c3047a186028f2a2c031abb/Finding-Your-Professional-Voice-MOOC-Image.jpg?auto=format%2Ccompress&dpr=3&w=330&h=330&fit=fill&q=25') top center;
   background-size: cover;
-  
+  margin-bottom: 0px;
+  z-index: 2;
 }
 
 #hero .container {
@@ -642,6 +718,10 @@ section {
   text-transform: uppercase;
 }
 
+.section-title span {
+  color: #0163ea;
+}
+
 .section-title p {
   margin-bottom: 0;
 }
@@ -677,68 +757,6 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 20px 0;
-  background-color: #f1f7fd;
-  min-height: 40px;
-  margin-top: 140px;
-  color:#0B2B6A;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 130px;
-  }
-}
-
-.breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs h2 {
-    margin: 0 0 10px 0;
-  }
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol li+li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
-}
-
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-
-  .breadcrumbs ol {
-    display: block;
-  }
-
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
 
 /*--------------------------------------------------------------
 # Why Us
@@ -851,7 +869,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients .clients-slider .swiper-slide img {
-  opacity: 0.5;
+  opacity: 0.7;
   transition: 0.3s;
 }
 
@@ -1351,6 +1369,11 @@ section {
   animation: fadeIn 0.5s ease-out;
 }
 
+.departments .tab-pane .details img {
+    width: 600px;
+    height: 525px;
+}
+
 .departments .details h3 {
   font-size: 26px;
   font-weight: 700;
@@ -1392,6 +1415,7 @@ section {
   -webkit-box-shadow: 0px 0px 4px 2px rgba(114, 4, 207, 0.75);
   -moz-box-shadow: 0px 0px 4px 2px rgba(114, 4, 207, 0.75);
 }
+
 
 @media (max-width: 992px) {
   .departments .nav-link {
@@ -2205,14 +2229,13 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: #0B2B6A;
+  color: #fff;
   font-size: 14px;
   /*  background: #f1f7fd;*/
   /*  background: #3d3937;*/
   /*  background: #0a0a0a;*/
   /*  background: #011548;*/
-  /*  background: #0B2B6A;*/
-  background: #f1f7fd;
+  background: #0B2B6A;
 }
 
 #footer .footer-top {
