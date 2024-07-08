@@ -1,5 +1,5 @@
 $(document).on('click','.send_contact', function(){
-    var input_blanter = document.getElementById('whatsapps');
+    var input_blanter = document.getElementById('names');
 
     /* Whatsapp Settings */
     var walink = 'https://web.whatsapp.com/send',
