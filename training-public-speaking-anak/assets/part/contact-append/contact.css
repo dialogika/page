@@ -35,6 +35,14 @@
   box-shadow: 0px 9px 16px -6px rgba(11, 43, 106, 1);
 }
 
+.contact-append img.framing {
+  height:300px;
+  width:100%;
+  border-color: #0B2B6A;
+  border-radius: 10px;
+  box-shadow: 0px 9px 16px -6px rgba(11, 43, 106, 1);
+}
+
 .contact-append .php-email-form {
   background: rgba(255, 255, 255, 0.7);
   padding: 30px;
