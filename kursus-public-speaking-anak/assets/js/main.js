@@ -1,5 +1,6 @@
 /**
-* Template Name: Medilab - v4.3.0
+* Template Name: Medilab
+* Updated: Sep 18 2023 with Bootstrap v5.3.2
 * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -32,89 +33,6 @@
       }
     }
   }
-  
-  // Hero typed
-  if ($('.typed').length) {
-    var typed_strings = $(".typed").data('typed-items');
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
-
-  /**
-   * Clients Slider
-   */
-  new Swiper('.clients-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      },
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 60
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 80
-      },
-      992: {
-        slidesPerView: 6,
-        spaceBetween: 120
-      }
-    }
-  });
-
-  /**
-   * Init swiper slider with 3 slides at once in desktop view
-   */
-  new Swiper('.slides-3', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 40
-      },
-
-      1200: {
-        slidesPerView: 3,
-      }
-    }
-  });
-
-
 
   /**
    * Easy on scroll event listener 
@@ -197,22 +115,6 @@
   }
 
   /**
-   * Swipe to appear
-   */
-  let swipetoappear = select('.swipe-to-appear')
-  if (swipetoappear) {
-    const toggleSwipetoappear = () => {
-      if (window.scrollY > 4500) {
-        swipetoappear.classList.add('active')
-      } else {
-        swipetoappear.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleSwipetoappear)
-    onscroll(document, toggleSwipetoappear)
-  }
-
-  /**
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {
@@ -285,12 +187,11 @@
   });
 
   /**
-   * Gallery Slider
+   * Clients Slider
    */
-  new Swiper('.galleries-slider', {
+  new Swiper('.clients-slider', {
     speed: 400,
     loop: true,
-    centeredSlides: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
@@ -303,35 +204,29 @@
     },
     breakpoints: {
       320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      575: {
         slidesPerView: 2,
-        spaceBetween: 20
+        spaceBetween: 40
       },
-      768: {
+      480: {
         slidesPerView: 3,
-        spaceBetween: 20
+        spaceBetween: 60
+      },
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 80
       },
       992: {
-        slidesPerView: 5,
-        spaceBetween: 20
+        slidesPerView: 6,
+        spaceBetween: 120
       }
     }
   });
 
-  /**
-   * Initiate gallery lightbox 
-   */
-  const galleryLightbox = GLightbox({
-    selector: '.galleries-lightbox'
-  });
 
   /**
    * Testimonials slider
    */
-  new Swiper('.testimonials-slider', {
+  new Swiper('.testimonials-slider',  {
     speed: 600,
     loop: true,
     autoplay: {
@@ -357,94 +252,196 @@
     }
   });
 
-  /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
-      });
+  /* end 8*/
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+    new Swiper('.mentor-doctor', {
+    direction: 'vertical',
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
 
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
-
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
-      }, true);
+      1200: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      }
     }
-
   });
 
+    new Swiper('.blog-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: false,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+      }
+    });
+  
   /**
-   * Initiate portfolio lightbox 
+   * Team slider
    */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
+  new Swiper('.in-team-slider-area', {
+    speed: 600,
     loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
     },
+    slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
+    },
+    navigation: {
+    nextEl: '.team_right_arrow',
+    prevEl: '.team_left_arrow',
+  }
+  });
+
+  /**
+   * Team slider
+   */
+  new Swiper('.testi', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+    nextEl: '.testi_right_arrow',
+    prevEl: '.testi_left_arrow',
+  }
+
+  });
+
+  /**
+   * Portofolio slider
+   */
+  new Swiper('.in-portfolio-content-2', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+    nextEl: '.testi_right_arrow',
+    prevEl: '.testi_left_arrow',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 50
+      }
     }
   });
 
   /**
-   * Animation on scroll
+   * Blog Post
    */
-  window.addEventListener('load', () => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    })
+  new Swiper('.blog-post', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+    nextEl: '.testi_right_arrow',
+    prevEl: '.testi_left_arrow',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 50
+      }
+    }
+
   });
 
   /**
-   * Countdown timer
+   * Testimonials slider
    */
+  new Swiper('.videos-faq',  {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 2750,
+      disableOnInteraction: false
+    },
+    effect: "cards",
+    grabCursor: true,
+  });
 
-  let countdown = select('.countdown');
-
-  const countDownDate = function() {
-    let timeleft = new Date(countdown.getAttribute('data-count')).getTime() - new Date().getTime();
-
-    let weeks = Math.floor(timeleft / (1000 * 60 * 60 * 24 * 7));
-    let days = Math.floor(timeleft / (1000 * 60 * 60 * 24) % 7);
-    let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-
-    let output = countdown.getAttribute('data-template');
-    output = output.replace('%w', weeks).replace('%d', days).replace('%h', hours).replace('%m', minutes).replace('%s', seconds);
-    countdown.innerHTML = output;
-  }
-  countDownDate();
-  setInterval(countDownDate, 1000);
 
   
+
+
+  /**
+   * Initiate Pure Counter 
+   */
+  new PureCounter();
 
 })()
