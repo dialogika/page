@@ -2,7 +2,7 @@
 ------------------------------*/
 .contact-append .info-item {
   background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0px 9px 16px -6px rgba(11, 43, 106, 1);
+  box-shadow: 0px 5px 16px -6px rgba(0, 0, 0, 0.8);
   padding: 17px;
   margin-top: 10px;
   border-radius: 10px;
@@ -22,6 +22,13 @@
   color: #0B2B6A;
 }
 
+.contact-append .info-item h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0px 0 5px 0;
+  color: #0B2B6A;
+}
+
 .contact-append .info-item p {
   padding: 0;
   line-height: 24px;
@@ -32,23 +39,66 @@
 .contact-append iframe {
   border-color: #0B2B6A;
   border-radius: 10px;
-  box-shadow: 0px 9px 16px -6px rgba(11, 43, 106, 1);
+  box-shadow: 0px 5px 16px -6px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0px 5px 16px -6px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 5px 16px -6px rgba(0, 0, 0, 0.8);
 }
 
 .contact-append img.framing {
-  height:300px;
+  height:100%;
   width:100%;
   border-color: #0B2B6A;
   border-radius: 10px;
   box-shadow: 0px 9px 16px -6px rgba(11, 43, 106, 1);
 }
 
+.contact-append a.daftar-sekarang {
+    margin-top: 35px;
+    color: #000;
+    border-radius: 50px;
+    padding: 8px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 700;
+    background: linear-gradient(to bottom, #f9c62e 5%, #ffb13b 100%);
+    background-color: #f9c62e;
+    box-shadow: 0px 5px 16px -6px rgba(255, 194, 176, 1);
+    -webkit-box-shadow: 0px 5px 16px -6px rgba(255, 194, 176, 1);
+    -moz-box-shadow: 0px 5px 16px -6px rgba(255, 194, 176, 1);
+/*    background: linear-gradient(to bottom, #0f61a8 5%, #0b2b6a 100%);*/
+/*    box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);*/
+/*    -webkit-box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);*/
+/*    -moz-box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);*/
+}
+
+.contact-append a.daftar-sekarang:hover {
+    background: linear-gradient(to bottom, #ffb13b 5%, #f9c62e 100%);
+    background-color: #ffb13b;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0px 0px 4px 2px rgba(255, 194, 176, 1);
+    -webkit-box-shadow: 0px 0px 4px 2px rgba(255, 194, 176, 1);
+    -moz-box-shadow: 0px 0px 4px 2px rgba(255, 194, 176, 1);
+}
+
+.contact-append p.bawah-daftar {
+    margin-top: 9px;
+    margin-left: 5px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #e7181a;
+}
+
+
 .contact-append .php-email-form {
   background: rgba(255, 255, 255, 0.7);
   padding: 30px;
   height: 100%;
   border-radius: 10px;
-  box-shadow: 0px 9px 16px -6px rgba(11, 43, 106, 1);
+/*  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);*/
+box-shadow: 0px 5px 16px -6px rgba(0, 0, 0, 0.8);
 }
 
 .contact-append .php-email-form .error-message {
@@ -64,12 +114,11 @@
 .contact-append .php-email-form .sent-message {
   display: none;
   color: #ffffff;
-  background: #006a4e;
+  background: #059652;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
-  font-weight: 700;
-  border-radius: 10px;
+  font-weight: 600;
 }
 
 .contact-append .php-email-form .loading {

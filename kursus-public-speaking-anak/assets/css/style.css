@@ -131,18 +131,6 @@ h6 {
   transition: 0.3s;
 }
 
-#topbar .contact-info button {
-    --bs-btn-padding-y: .30rem;
-    --bs-btn-padding-x: .5rem;
-    --bs-btn-font-size: .75rem;
-    background: linear-gradient(to bottom, #0f61a8 5%, #0b2b6a 100%);
-    border: none;
-}
-
-#topbar .contact-info button:hover {
-    background: linear-gradient(to bottom, #0b2b6a 5%, #0f61a8 100%);
-}
-
 #topbar .contact-info a:hover {
   color: #0b2b6a;
 }
@@ -440,6 +428,70 @@ h6 {
   margin-left: 17px;
 }
 
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 20px 0;
+  background-color: #f1f7fd;
+  min-height: 40px;
+  margin-top: 140px;
+  color:#0B2B6A;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 130px;
+  }
+}
+
+.breadcrumbs h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs h2 {
+    margin: 0 0 10px 0;
+  }
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #6c757d;
+  content: "/";
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+
+  .breadcrumbs ol {
+    display: block;
+  }
+
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
 
 
 /*--------------------------------------------------------------
@@ -448,9 +500,10 @@ h6 {
 #hero {
   width: 100%;
   height: 90vh;
-  background: url('../img/hero.webp') top center;
+  background: url('https://i.ytimg.com/vi/xLYoj-yJK20/maxresdefault.jpg') top center;
   background-size: cover;
-  margin-bottom: -200px;
+  margin-bottom: -70px;
+  z-index: 2;
 }
 
 #hero .container {
@@ -704,68 +757,6 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 20px 0;
-  background-color: #f1f7fd;
-  min-height: 40px;
-  margin-top: 140px;
-  color:#0B2B6A;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 130px;
-  }
-}
-
-.breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs h2 {
-    margin: 0 0 10px 0;
-  }
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol li+li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
-}
-
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-
-  .breadcrumbs ol {
-    display: block;
-  }
-
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
 
 /*--------------------------------------------------------------
 # Why Us
@@ -883,7 +874,7 @@ section {
 }
 
 .clients .clients-slider .swiper-slide img:hover {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .clients .clients-slider .swiper-pagination {
@@ -1988,27 +1979,6 @@ section {
   border-radius: 10px;
 }
 
-.faq .carousel_nav button {
-  z-index: 1;
-  width: 40px;
-  height: 40px;
-  border: none;
-  margin: 0px 5px;
-  position: relative;
-  border-radius: 100%;
-  border: 1px solid #dddddd;
-  -webkit-transition: 500ms all ease;
-  transition: 500ms all ease;
-  background: linear-gradient(to bottom, #0f61a8 5%, #0b2b6a 100%);
-  color: #fff;
-}
-
-.faq .carousel_nav button:hover {
-  background: linear-gradient(to bottom, #0b2b6a 5%, #0f61a8 100%);
-  background-color: #0b2b6a;
-  color: #fff;
-}
-
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -2412,12 +2382,6 @@ section {
   border-radius: 50px;
   text-align: left;
   border: 1px solid #bfdcf7;
-}
-
-#footer .footer-newsletter form input:active,
-#footer .footer-newsletter form input:focus {
-  outline: none;
-  box-shadow: none;
 }
 
 #footer .footer-newsletter form input[type=tel] {

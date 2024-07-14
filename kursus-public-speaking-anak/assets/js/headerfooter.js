@@ -11,10 +11,8 @@ class Header extends HTMLElement {
     <div id="topbar" class="d-flex align-items-center fixed-top">
       <div class="container d-flex justify-content-between">
         <div class="contact-info d-flex align-items-center">
-          <button type="button" class="btn btn-primary" onclick="location.href = 'https://www.dialogika.co/en';">
-            Click Here for English Version
-          </button>
-          
+          <i class="bi bi-envelope"></i> <a href="mailto:admin@dialogika.co">admin@dialogika.co</a>
+          <i class="bi bi-phone"></i> +62 851 6299 2597
         </div>
         <div class="d-none d-lg-flex social-links align-items-center">
           <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -31,7 +29,19 @@ class Header extends HTMLElement {
 
          <a href="../index.html" class="logo me-auto"><img src="assets/img/logo.webp" alt="" class="img-fluid"></a>
 
-        <a href="../promo/" class="appointment-btn">Materi <span class="d-none d-md-inline">Class</span></a>
+         <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul class="navbar-desktop-list">
+            <li><a class="nav-link scrollto active" href="#heroes">Home</a></li>
+            <li><a class="nav-link scrollto" href="#benefit">Benefit</a></li>
+            <li><a class="nav-link scrollto" href="#testimonial">Testimoni</a></li>
+            <li><a class="nav-link scrollto" href="#comparison">Comparison</a></li>
+            <li><a class="nav-link scrollto" href="#material">Materi</a></li>
+            <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+          </ul>
+          <i class="bi bi-list d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"></i>
+         </nav><!-- .navbar -->
+
+        <a href="#contact" class="appointment-btn">Daftar <span class="d-none d-md-inline">Sekarang</span></a>
 
       </div>
     </header><!-- End Header -->
@@ -45,6 +55,21 @@ class Header extends HTMLElement {
               <img src="assets/img/logo.webp" class="offcanvas-title" id="offcanvasNavbarLabel"/>
             </a>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <a href="#heroes"><div class="card"><div class="card-body">Home</div></div></a>
+            <a href="#benefit"><div class="card card-body">Benefit</div></a>
+            <a href="#testimonial"><div class="card card-body">
+              <div class="justify-content-between d-flex">
+                <span>Testimoni </span>
+              </div>
+            </div></a>
+            <a href="#material"><div class="card card-body">
+              <div class="justify-content-between d-flex">
+                <span>Materi</span>
+              </div>
+            </div></a>
+            <a href="#faq"><div class="card card-body">FAQ</div></a>
           </div>
         </div>
       </div>
@@ -66,6 +91,79 @@ class Footer extends HTMLElement {
     <!-- ======= Footer ======= -->
     <footer id="footer">
 
+      <div class="footer-top">
+        <div class="container">
+          <div class="row justify-content-between">
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3><img src="assets/img/white-logo.webp" class="footer-logo" alt="Kelas Public Speaking Jogja" /></h3>
+              <p>
+                Wadah pengembangan diri membangun aura positif sekaligus meningkatkan kualitas skill, karir hingga level
+                kehidupan Anda.
+              </p><br>
+              <p>Kami memberikan pelatihan Kelas Public Speaking karena dengan menguasai Public Speaking, mental,
+                perilaku, penampilan hingga sikap Anda terbentuk.</p><br>
+            </div>
+
+            <div class="col-lg-6 col-md-6 footer-links">
+                <h4 class="d-flex justify-content-between">Contact Us<i class='bx bx-chevron-down d-md-none'></i></h4>
+                <div class="social-link d-flex mt-3">
+                  <a href="https://wa.link/ms2gko"
+                    class="text-light d-flex align-items-center justify-content-center"><i class="bx bxl-whatsapp"></i></a>
+                  <a href="mailto:hello@dialogika.co" class="d-flex align-items-center justify-content-center"><i
+                      class="bi bi-envelope-at-fill"></i></a>
+                </div>
+                <hr />
+                <p>Punya pertanyaan mengenai Dialogika?</p>
+                <br>
+                <p>
+                  <strong>Phone:</strong> +62 857-8000-7799<br>
+                  <strong>Phone:</strong> +62 851-6299-2597<br>
+                  <strong>Email:</strong> hello@dialogika.co<br>
+                </p>
+                <br><br>
+                <h4 class="d-flex justify-content-between">Follow Us<i class='bx bx-chevron-down d-md-none'></i></h4>
+                <div class="social-link d-flex mt-3">
+                  <a href="https://link.dialogika.co/twitter" class="d-flex align-items-center justify-content-center"><i
+                      class="bi bi-twitter"></i></a>
+                  <a href="https://link.dialogika.co/facebook" class="d-flex align-items-center justify-content-center"><i
+                      class="bi bi-facebook"></i></a>
+                  <a href="https://link.dialogika.co/instagram" class="d-flex align-items-center justify-content-center"><i
+                      class="bi bi-instagram"></i></a>
+                  <a href="https://link.dialogika.co/linkedin" class="d-flex align-items-center justify-content-center"><i
+                      class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4 class="d-flex justify-content-between">Join Whatsapp Group Community<i
+                  class='bx bx-chevron-down d-md-none'></i></h4>
+              <p>Secara Berkala Kami Akan Bagi-Bagi Tips & Trik Gratis, Dan Info Promo Lainnya</p>
+              <form action="javascript:void" role="form" id="subcriptions" method="post">
+                <input type="tel" name="Surel" placeholder="Nomor Whatsapp"><input type="submit" value="Connect Now" onclick="Subcription()">
+              </form>
+              <br><br>
+              <h4 class="d-flex justify-content-between">Payment Method<i class='bx bx-chevron-down d-md-none'></i></h4>
+              <p><i class="bx bx-chevron-down"></i> Bank Transfer</p>
+              <img src="assets/img/bank.webp" style="width:100%;"/>
+              <br><br>
+              <p><i class="bx bx-chevron-down"></i> E-Wallet</p>
+              <img src="assets/img/wallet.webp" style="width:100%;"/>
+
+              <ul class="list-group border-warning" style="background: transparent;">
+                <li class="list-group-item">
+                  <b>Telah Terdaftar Oleh</b><br>
+                  <img src="assets/img/ham.webp" class="" /><br>
+                  <strong>Nomor:</strong> AHU-0118640.AH.01.11.TAHUN 2022<br>
+                  <strong>Registrasi: </strong>4022062334106037<br />
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
       <div class="container d-md-flex py-4">
 
         <div class="me-md-auto text-center text-md-start">
@@ -84,6 +182,7 @@ class Footer extends HTMLElement {
         </div>
       </div>
     </footer><!-- End Footer -->
+
 
     `;
   }
