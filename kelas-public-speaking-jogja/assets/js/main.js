@@ -186,41 +186,41 @@
     selector: '.galelry-lightbox'
   });
 
-    /**
-     * Clients Slider
-     */
-    new Swiper('.clients-slider', {
-      speed: 400,
-      loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
+  /**
+   * Clients Slider
+   */
+  new Swiper('.clients-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 40
       },
-      slidesPerView: 'auto',
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 60
       },
-      breakpoints: {
-        320: {
-          slidesPerView: 2,
-          spaceBetween: 40
-        },
-        480: {
-          slidesPerView: 3,
-          spaceBetween: 60
-        },
-        640: {
-          slidesPerView: 4,
-          spaceBetween: 80
-        },
-        992: {
-          slidesPerView: 6,
-          spaceBetween: 120
-        }
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 80
+      },
+      992: {
+        slidesPerView: 6,
+        spaceBetween: 120
       }
-    });
+    }
+  });
 
 
   /**
@@ -280,6 +280,20 @@
       }
     }
   });
+
+    new Swiper('.blog-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: false,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+      }
+    });
   
   /**
    * Team slider

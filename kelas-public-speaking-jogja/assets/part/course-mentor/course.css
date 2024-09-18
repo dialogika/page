@@ -4,7 +4,7 @@
 .courses .course-item {
   border-radius: 5px;
   border: 1px solid #0B2B6A;
-  background-color: #0B2B6A;
+  /* background-color: #0B2B6A; */
   box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
   -webkit-box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
   -moz-box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
@@ -17,21 +17,21 @@
 .courses .course-content h3 {
   font-weight: 700;
   font-size: 30px;
-  color: #fff;
+  color: black;
 }
 
 .courses .course-content h3 a {
-  color: #fff;
+  color: black;
   transition: 0.3s;
 }
 
 .courses .course-content h3 a:hover {
-  color: #0163ea;
+  color: black;
 }
 
 .courses .course-content p {
   font-size: 14px;
-  color: #fff;
+  color: black;
 }
 
 .courses .course-content hr {
@@ -116,14 +116,12 @@
   border-radius: 10px;
 }
 
-.course-details .info-item i.bi {
+.course-details .info-item i {
   font-size: 38px;
   line-height: 0;
   color: #0B2B6A;
   float: right;
-  margin-top: 20px;
 }
-
 
 .course-details.info-item h3 {
   font-size: 20px;
@@ -138,6 +136,65 @@
   font-size: 14px;
   margin-bottom: 0;
 }
+
+.course-details .resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
+
+.course-details .resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #0563bb;
+  position: relative;
+}
+
+.course-details .resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #0563bb;
+  margin-bottom: 10px;
+}
+
+.course-details .resume .resume-item h5 {
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.course-details .resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.course-details .resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.course-details .resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.course-details .resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #0563bb;
+}
+
 
 .course-details .video-box {
   position: relative;
@@ -228,12 +285,33 @@
   color: #0B2B6A;
 }
 
+.course-details h3:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #eef0ef;
+  bottom: 0;
+  left: 0;
+}
+
+.course-details h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #0B2B6A;
+  bottom: 0;
+  left: 0;
+}
+
 .course-details .course-info {
   background: #f1f7fd;
   padding: 10px 15px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   border-radius: 10px;
-  box-shadow: 0px 5px 16px -6px rgba(0, 0, 0, 0.8);
 }
 
 .course-details .course-info h5 {
@@ -263,7 +341,6 @@
 
 .course-details a.course-button {
   background: linear-gradient(to bottom, #0f61a8 5%, #0b2b6a 100%);
-  box-shadow: 0px 5px 16px -6px rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   display: inline-block;
   cursor: pointer;
@@ -273,7 +350,7 @@
   padding: 26px 69px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #2f6627;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 100%;
 }
 

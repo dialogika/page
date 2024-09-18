@@ -2,7 +2,7 @@
 ------------------------------*/
 .contact-append .info-item {
   background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0px 5px 16px -6px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 9px 16px -6px rgba(11, 43, 106, 1);
   padding: 17px;
   margin-top: 10px;
   border-radius: 10px;
@@ -32,9 +32,7 @@
 .contact-append iframe {
   border-color: #0B2B6A;
   border-radius: 10px;
-  box-shadow: 0px 5px 16px -6px rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0px 5px 16px -6px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0px 5px 16px -6px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 9px 16px -6px rgba(11, 43, 106, 1);
 }
 
 .contact-append .php-email-form {
@@ -42,8 +40,7 @@
   padding: 30px;
   height: 100%;
   border-radius: 10px;
-/*  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);*/
-box-shadow: 0px 5px 16px -6px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 9px 16px -6px rgba(11, 43, 106, 1);
 }
 
 .contact-append .php-email-form .error-message {
@@ -59,11 +56,12 @@ box-shadow: 0px 5px 16px -6px rgba(0, 0, 0, 0.8);
 .contact-append .php-email-form .sent-message {
   display: none;
   color: #ffffff;
-  background: #059652;
+  background: #006a4e;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
-  font-weight: 600;
+  font-weight: 700;
+  border-radius: 10px;
 }
 
 .contact-append .php-email-form .loading {

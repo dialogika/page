@@ -5,6 +5,13 @@
   padding-top: 20px;
 }
 
+.features-small .active-map {
+  background: #0b2b6a;
+  h3 a{
+
+    color: white !important;
+  }
+}
 .features-small .icon-box {
   display: flex;
   align-items: center;
@@ -43,7 +50,6 @@
   top: 0;
   border-radius: 0px;
 }
-
 
 .features-small .icon-box i {
   font-size: 32px;
