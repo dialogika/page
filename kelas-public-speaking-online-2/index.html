@@ -1041,30 +1041,31 @@
                   <select name="program" id="programs" class="form-control" required>
                     <option value="" selected disabled>Pilih Program</option>
 
+                    <!-- onclick="changeFormImg('assets/img/program/action-play/action-play.webp')"
+                        onclick="changeFormImg('assets/img/program/basic-plus/basic-plus-mini-card.png')"
+                        onclick="changeFormImg('assets/img/program/basic-private/basic-private-mini-card.png')"
+                        onclick="changeFormImg('assets/img/program/basic-play/basic-play-mini-card.webp')"
+                        onclick="changeFormImg('assets/img/program/asking-admin/asking-admin.webp')" -->
+
+                    <!-- Script ubah gambar di /part/custom-landing-page-online -->
                     <optgroup label="4x Pertemuan">
-                      <option value="39956d96-c194-4868-8f50-7fe808bf78dd"
-                        onclick="changeFormImg('assets/img/program/action-play/action-play.webp')">Action Play: 257K
+                      <option value="39956d96-c194-4868-8f50-7fe808bf78dd" id="action-play">Action Play: 257K
                       </option>
                     </optgroup>
 
                     <optgroup label="7x Pertemuan">
-                      <option value="ed0a3dcf-c582-4c6d-918e-98842d75be7c"
-                        onclick="changeFormImg('assets/img/program/basic-plus/basic-plus-mini-card.png')">Basic Plus:
+                      <option value="ed0a3dcf-c582-4c6d-918e-98842d75be7c" id="basic-plus">Basic Plus:
                         499K</option>
-                      <option value="7a4ccb01-3ac3-497c-b7b3-e8ab6683e8c0"
-                        onclick="changeFormImg('assets/img/program/basic-private/basic-private-mini-card.png')">Basic
+                      <option value="7a4ccb01-3ac3-497c-b7b3-e8ab6683e8c0" id="basic-private">Basic
                         Private: 987K</option>
                     </optgroup>
 
                     <optgroup label="12x Pertemuan">
-                      <option value="d990d420-14ad-439e-85a1-bdafa5ae0e05"
-                        onclick="changeFormImg('assets/img/program/basic-play/basic-play-mini-card.webp')">
+                      <option value="d990d420-14ad-439e-85a1-bdafa5ae0e05" id="basic-play-3-bulan">
                         Basic Play 3 Bulan</option>
                     </optgroup>
                     <optgroup label="Konsultasi">
-                      <option id="ask-adm" value="ask-adm"
-                        onclick="changeFormImg('assets/img/program/asking-admin/asking-admin.webp')">Asking
-                        Admin</option>
+                      <option id="ask-adm" value="ask-adm">Asking Admin</option>
                     </optgroup>
                   </select>
                 </div>
