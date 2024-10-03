@@ -49,13 +49,10 @@ $(document).on("click", ".send_contact", function () {
       "%0A";
 
     // WhatsApp Window Open
-    setTimeout(() => {
-      
       window.open(blanter_whatsapp, "_blank");
       document.getElementById("text-info").innerHTML =
         '<span class="yes">' + text_yes + "</span>";
 
-    }, 3000);
   } else {
     document.getElementById("text-info").innerHTML =
       '<span class="no">' + text_no + "</span>";
