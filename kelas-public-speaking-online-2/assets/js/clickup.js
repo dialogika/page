@@ -26,7 +26,6 @@ document
       if (program == "ask-adm") {
         loading.style.display = "none";
 
-        redirectWA();
         return;
       }
       // Membuat task baru di ClickUp
@@ -65,7 +64,6 @@ document
       if (createTaskResponse.status === 200 || createTaskResponse.ok) {
         loading.style.display = "none";
 
-        redirectWA();
         success.style.display = "flex";
 
         setTimeout(() => {
