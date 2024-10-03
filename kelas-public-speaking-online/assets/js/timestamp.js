@@ -1,7 +1,7 @@
 $(function () {
   $('#submits').attr('disabled', true);
-  $('#myForm').change(function () {
-    if ($('#names').val() != '' && $('#works').val() != '' && $('#locations').val() != '' && $('#whatsapps').val() != '') {
+  $('#uploadForm').change(function () {
+    if ($('#names').val() != '' && $('#works').val() != '' && $('#locations').val() != '' && $('#whatsapp').val() != '') {
       $('#submits').attr('disabled', false);
     } else {
       $('#submits').attr('disabled', true);
