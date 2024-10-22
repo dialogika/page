@@ -1,4 +1,4 @@
-$(document).on("click", ".pricing-btn-link", function () {
+$(document).on("click", ".belum-digunakan-nanti-ubah-saja-targetnya", function () {
   var walink = "https://web.whatsapp.com/send",
     phone = "6285162992597",
     defaultMessage =

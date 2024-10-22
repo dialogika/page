@@ -234,7 +234,6 @@ h6 {
   -moz-box-shadow: 0px 0px 5px 3px rgba(0, 150, 97, 0.6);
 }
 
-
 .custom-pricing-card ul {
   padding: 0;
   li {
@@ -244,24 +243,47 @@ h6 {
     color: #60697b;
     text-align: left;
   }
-  .price-checklist {
-    width: 25px;
-    height: 25px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, #0f61a8 5%, #0b2b6a 100%);
-    padding: 10px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
+
+.custom-pricing-card .price-checklist {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #0f61a8 5%, #0b2b6a 100%);
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .custom-pricing-card .price-checklist::before {
-  content: "\2713"; /* Unicode untuk checkmark */
+  content: "\2713";
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.custom-pricing-card .price-checklist-danger {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #dc3545 5%, #a71b2a 100%);
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.custom-pricing-card .price-checklist-danger::before {
+  content: "\2717";
   color: white;
   font-size: 16px;
   font-weight: bold;
