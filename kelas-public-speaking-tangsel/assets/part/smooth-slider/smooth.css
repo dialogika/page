@@ -19,7 +19,7 @@
   width: 250px;
   height: 100%;
   z-index: 2;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #f8f8f8);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #F1F7FD);
 }
 
 .smooth-swiper-container-top::after,
@@ -32,10 +32,11 @@
   width: 250px;
   height: 100%;
   z-index: 2;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #f8f8f8);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #F1F7FD);
 }
 
 #partner .smooth-swiper-container .swiper-slide {
+  background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   width: 175px;
