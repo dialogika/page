@@ -42,6 +42,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.css" rel="stylesheet">
+  <link href="assets/vendor/international-phone-number/intlTelInput.css" rel="stylesheet">
+  <link href="assets/vendor/atropos/atropos.min.css" rel="stylesheet">
 
 
   <!-- Part CSS Files -->
@@ -61,12 +63,12 @@
   <link href="assets/part/read-more/read-more_less.css" rel="stylesheet" />
   <link href="assets/part/recent-append/recent-post.css" rel="stylesheet" />
   <link href="assets/part/services-insurin/service.css" rel="stylesheet" />
-  <link href="assets/part/smooth-slider/smooth.css" rel="stylesheet">
-  <!-- <link href="assets/part/gallery/cta.css" rel="stylesheet" /> -->
+  <link href="assets/part/smooth-slider/smooth-slider.css" rel="stylesheet">
   <link href="assets/part/gallery-class/style.css" rel="stylesheet" />
   <link href="assets/part/gallery-ipsum/style.css" rel="stylesheet" />
   <link href="assets/part/team-mentor/style.css" rel="stylesheet" />
-  <link href="assets/part/custom-landing-tangsel/custom-landing-tangsel.css" rel="stylesheet" />
+  <link href="assets/part/modals/modal.css" rel="stylesheet" />
+  <link href="assets/part/atropos/style.css" rel="stylesheet">
 
 
   <link href="assets/part/about-quick/style.css" rel="stylesheet">
@@ -224,17 +226,37 @@
       <div class="container text-center text-md-start hero-container">
         <div class="row gy-4 justify-content-between align-items-center hero-content">
           <!-- Column for image (moved above text on mobile) -->
-          <div class="col-lg-4 col-md-6 text-center text-md-end hero-image-container order-1 order-md-2"
+
+          <!-- <div class="col-lg-4 col-md-6 text-center text-md-end hero-image-container order-1 order-md-2"
             data-aos="zoom-out" data-aos-delay="100" style="z-index: 2;">
             <img src="assets/img/online-images/desain-online-gimmick-2.webp" class="img-fluid animated"
               alt="Kelas Public Speaking Online">
+          </div> -->
+
+          <div
+            class="overflow-hidden position-relative col-md-6 col-12  order-1 order-md-2 text-center text-md-end justify-content-center align-items-center d-flex">
+            <div class=" atropos hero-atropos hero-image-container" style="z-index: 2;">
+              <div class="atropos-scale">
+                <div class="atropos-rotate">
+                  <div class="atropos-inner">
+                    <div class="atropos-img">
+                      <img src="assets/img/online-images/desain-online-gimmick-2.webp" class="img-fluid"
+                        alt="Kelas Public Speaking Online">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
+
+
           <!-- Column for text -->
           <div
-            class="col-lg-6 col-md-6 d-flex flex-column justify-content-center text-center text-md-start order-2 order-md-1"
+            class="col-md-6 col-12 d-flex flex-column justify-content-center text-center text-md-start order-2 order-md-1"
             data-aos="fade-in">
             <p>
-              <span class="badge text-bg-primary" style="width: 13rem;margin-bottom:-10px;">
+              <span class="badge text-bg-primary" style="width: 13rem; margin-bottom:-10px;">
                 Kursus Public Speaking Online
               </span>
             </p>
@@ -256,7 +278,7 @@
     </section><!-- End Hero -->
 
 
-    <section class="section" id='partner' style="background: #F8F8F8;">
+    <section class="section" id='partner' style="background: #F1F7FD;">
       <!-- Start of Clients Section -->
       <div class="container overflow-hidden" id="partners">
         <div class="d-flex flex-lg-row flex-column align-items-center">
@@ -271,6 +293,7 @@
               yang berfokus pada pengembangan keterampilan komunikasi. Mitra resmi kami siap membantu kebutuhan
               pelatihan dan pengembangan Anda.</p>
           </div>
+
           <div class="flex-grow-1 smooth-swiper-container m-auto col-lg-6 col-md-12">
 
             <div class="w-100 position-relative overflow-hidden py-3 smooth-swiper-container-top">
@@ -353,7 +376,6 @@
 
         </div>
 
-      </div>
     </section>
     <!-- End Clients Section -->
 
@@ -676,9 +698,10 @@
                 <img loading="lazy" src="assets/img/home/course-before.webp" class="course-social-1 ">
                 <img loading="lazy" src="assets/img/home/course-after.webp" class="course-social-2 ">
               </div>
-              <h4 class="title"><a>Masih Pemula</a></h4>
+              <h4 class="title"><a href="#contact">Masih Pemula</a></h4>
               <hr />
-              <p class="description">Yang Ingin Belajar <span class="badge text-bg-success">Dari Nol</span> Hingga Bisa
+              <p class="description">Yang Ingin Belajar <span class="badge text-bg-success" href="#contact">Dari
+                  Nol</span> Hingga Bisa
                 dan Lebih Percaya Diri.</p>
             </div>
           </div>
@@ -689,7 +712,7 @@
                 <img loading="lazy" src="assets/img/home/in-house-before.webp" class="course-social-1 ">
                 <img loading="lazy" src="assets/img/home/in-house-after.webp" class="course-social-2 ">
               </div>
-              <h4 class="title"><a>Ingin Meningkatkan Karir</a></h4>
+              <h4 class="title"><a href="#contact">Ingin Meningkatkan Karir</a></h4>
               <hr />
               <p class="description">Ke Jenjang Yang Lebih Tinggi Dari Saat Ini dan Tampil Lebih Percaya Diri.</p>
             </div>
@@ -701,7 +724,7 @@
                 <img loading="lazy" src="assets/img/home/excellence-before.webp" class="course-social-1 ">
                 <img loading="lazy" src="assets/img/home/excellence-after.webp" class="course-social-2 ">
               </div>
-              <h4 class="title"><a>Pelajar & Kuliah</a></h4>
+              <h4 class="title"><a href="#contact">Pelajar & Kuliah</a></h4>
               <hr />
               <p class="description">Yang Ingin Tampil Lebih Percaya Diri <span class="badge text-bg-success">Saat
                   Presentasi</span></p>
@@ -714,7 +737,7 @@
                 <img loading="lazy" src="assets/img/home/module-before.webp" class="course-social-1 ">
                 <img loading="lazy" src="assets/img/home/module-after.webp" class="course-social-2 ">
               </div>
-              <h4 class="title"><a>Yang Memiliki Anak</a></h4>
+              <h4 class="title"><a href="#contact">Yang Memiliki Anak</a></h4>
               <hr />
               <p class="description">Dan ingin <span class="badge text-bg-success">putra/putrinya</span> tampil lebih
                 percaya diri</p>
@@ -801,10 +824,6 @@
                         <p class="mb-3 f-16">
                           <i class='bx bxs-check-circle'></i>
                           Waktu <b>Setiap Minggu: 15:30 WIB</b>
-                        </p>
-                        <p class="mb-3 f-16">
-                          <i class='bx bxs-x-circle' style="color:#aaaaaa;"></i>
-                          <strike style="color:#aaaaaa;">Dapat eCertificate</strike>
                         </p>
                       </div>
                       <div class="mt-4 pt-2 text-center">
@@ -906,6 +925,14 @@
                           <i class='bx bxs-check-circle'></i>
                           Dapat eCertificate
                         </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle'></i>
+                          Gratis <b>webinar</b> setiap bulan w/ CEO
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle'></i>
+                          Dapat <b>materi</b> setiap minggu
+                        </p>
                       </div>
                       <div class="mt-4 pt-2 text-center">
                         <a target="__blank" href="https://wa.link/11ckye" class="btn btn-green w-100"> Daftar
@@ -950,6 +977,14 @@
                         <p class="mb-3 f-16">
                           <i class='bx bxs-check-circle'></i>
                           Dapat eCertificate
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle'></i>
+                          Gratis <b>webinar</b> setiap bulan w/ CEO
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle'></i>
+                          Dapat <b>materi</b> setiap minggu
                         </p>
                       </div>
                       <div class="mt-4 pt-2 text-center">
@@ -1073,7 +1108,7 @@
           <div class="col-lg-6 order-2 order-lg-1">
 
             <div>
-              <img class="form-img" src="assets/img/program/action-play/action-play.webp" />
+              <img class="form-img object-fit-cover" src="assets/img/program/action-play/action-play.webp" />
 
               <div class="row gy-4">
 
@@ -1110,8 +1145,7 @@
                 <!-- Whatsapp -->
                 <div class="col-md-6">
                   <label for="whatsapp" style="display: none;">WhatsApp Number:</label>
-                  <input type="text" id="whatsapp" name="whatsapp" class="form-control" required placeholder="WhatsApp*"
-                    pattern="[0-9]{10,15}">
+                  <input type="text" id="whatsapp-number" name="whatsapp-number" class="form-control" required>
                 </div>
 
                 <!-- Domisili -->
@@ -1125,12 +1159,6 @@
                   <select name="program" id="programs" class="form-control" required>
                     <option value="" selected disabled>Pilih Program</option>
 
-                    <!-- onclick="changeFormImg('assets/img/program/action-play/action-play.webp')"
-                        onclick="changeFormImg('assets/img/program/basic-plus/basic-plus-mini-card.png')"
-                        onclick="changeFormImg('assets/img/program/basic-private/basic-private-mini-card.png')"
-                        onclick="changeFormImg('assets/img/program/basic-play/basic-play-mini-card.webp')"
-                        onclick="changeFormImg('assets/img/program/asking-admin/asking-admin.webp')" -->
-
                     <!-- Script ubah gambar di /part/custom-landing-page-online -->
                     <optgroup label="4x Pertemuan">
                       <option value="39956d96-c194-4868-8f50-7fe808bf78dd" id="action-play">Action Play: 257K
@@ -1138,15 +1166,14 @@
                     </optgroup>
 
                     <optgroup label="7x Pertemuan">
-                      <option value="ed0a3dcf-c582-4c6d-918e-98842d75be7c" id="basic-plus">Basic Plus:
-                        499K</option>
-                      <option value="7a4ccb01-3ac3-497c-b7b3-e8ab6683e8c0" id="basic-private">Basic
-                        Private: 987K</option>
+                      <option value="ed0a3dcf-c582-4c6d-918e-98842d75be7c" id="basic-plus">Basic Plus: 499K</option>
+                      <option value="7a4ccb01-3ac3-497c-b7b3-e8ab6683e8c0" id="basic-private">Basic Private: 987K
+                      </option>
                     </optgroup>
 
                     <optgroup label="12x Pertemuan">
-                      <option value="d990d420-14ad-439e-85a1-bdafa5ae0e05" id="basic-play-3-bulan">
-                        Basic Play 3 Bulan</option>
+                      <option value="d990d420-14ad-439e-85a1-bdafa5ae0e05" id="basic-play-3-bulan"> Basic Play 3 Bulan
+                      </option>
                     </optgroup>
                     <optgroup label="Konsultasi">
                       <option id="ask-adm" value="ask-adm">Asking Admin</option>
@@ -1546,6 +1573,8 @@
   <main-footer></main-footer>
   <!-- ======= End Footer & Counter Area ======= -->
 
+  <footer-modal></footer-modal>
+
   <div class="sosmed-container mt-4">
     <a href="https://wa.me/6285162992597" target="__blank" type="button" class="btn-sosmed btn-trigger-sosmed">
       <i class="bi bi-whatsapp bx-tada" id="icon-trigger"></i>
@@ -1792,7 +1821,11 @@
 
   <!-- Part -->
   <script src="assets/part/gallery-ipsum/script.js"></script>
-  <script src="assets/part/smooth-slider/swiper-script.js"></script>
+  <script src="assets/part/smooth-slider/smooth-slider.js"></script>
+  <script src="assets/part/modals/modal-component.js"></script>
+  <script src="assets/part/read-more/read-more_less.js"></script>
+  <script src="assets/part/atropos/script.js"></script>
+
 
   <script src="assets/part/custom-landing-page-online/custom-landing-page-online.js"></script>
 
@@ -1802,6 +1835,9 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/international-phone-number/script.js"></script>
+  <script src="assets/vendor/international-phone-number/intlTelInput.min.js"></script>
+  <script src="assets/vendor/atropos/atropos.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/headerfooter.js"></script>

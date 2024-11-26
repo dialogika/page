@@ -11,41 +11,11 @@ document.getElementById('uploadForm').addEventListener('submit', async function 
     const program = document.getElementById('programs').value;
     const note = document.getElementById('messages').value.trim();
 
-    // const email = document.getElementById('email').value.trim();
-    // const linkedin = document.getElementById('linkedin').value.trim();
-    // const channelCheckboxes = document.querySelectorAll('input[name="channel"]:checked');
-    
-    // const workType = document.getElementById('workType').value;
-    // const position = document.getElementById('position').value;
-    // const motivate = document.getElementById('motivate').value.trim();
-    // const fileInput = document.getElementById('pdf');
-    // const file = fileInput.files[0];
-    // const birthDate = document.getElementById('birthDate').value;
     const loading = document.getElementById('loading');
     const success = document.getElementById('success');
 
     // Mengambil semua checkbox channel yang dicentang dan memasukkannya ke array
     const channels = Array.from(channelCheckboxes).map(checkbox => checkbox.value);
-
-    // Validasi sederhana untuk memastikan semua kolom diisi sebelum dikirim
-    // if (!name || !umur || !email || channels.length === 0 || !location || !position || !motivate || !linkedin || !birthDate) {
-    //     alert('Semua kolom harus diisi.');
-    //     return;
-    // }
-
-    // // Validasi file yang diunggah harus berformat PDF
-    // if (!file || file.type !== 'application/pdf') {
-    //     alert('Silakan unggah file PDF.');
-    //     return;
-    // }
-
-    // // Konversi tanggal lahir menjadi timestamp (milidetik sejak 1 Januari 1970)
-    // const birthDateObject = new Date(birthDate);
-    // if (isNaN(birthDateObject.getTime())) {
-    //     alert('Tanggal lahir tidak valid.');
-    //     return;
-    // }
-    // const birthDateTimestamp = birthDateObject.getTime(); 
 
     // Menampilkan animasi loading saat proses pengunggahan berjalan
     loading.style.display = 'flex';

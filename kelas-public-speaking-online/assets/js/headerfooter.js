@@ -62,6 +62,7 @@ class Header extends HTMLElement {
         <div class="offcanvas-body">
           <a href="#hero"><div class="card"><div class="card-body">Home</div></div></a>
           <a href="#testimonials"><div class="card card-body">Testimony</div></a>
+          <a href="#pricing"><div class="card card-body">Pricing</div></a>
           <a href="#mentor"><div class="card card-body">Mentor</div></a>
           <a href="#gallery"><div class="card card-body">Gallery</div></a>
         </div>
@@ -118,7 +119,8 @@ class Footer extends HTMLElement {
                 class='bx bx-chevron-down d-md-none'></i></h4>
             <p>Secara Berkala Kami Akan Bagi-Bagi Tips & Trik Gratis, Dan Info Promo Lainnya</p>
             <form action="javascript:void" role="form" id="subcriptions" method="post">
-              <input type="tel" name="Surel" placeholder="Nomor Whatsapp"><input type="submit" value="Connect Now" onclick="Subcription()">
+              <input type="tel" name="Surel" class="custom-input-footer" placeholder="Join Our Class Group" disabled>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#footerSubModal" class="blue-dialogika-btn footerSubBtn">Gabung</button>
             </form>
             <br><br>
             <h4 class="d-flex justify-content-between">Payment Method<i class='bx bx-chevron-down d-md-none'></i></h4>
