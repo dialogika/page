@@ -11,10 +11,7 @@ class Header extends HTMLElement {
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-between">
       <div class="contact-info d-flex align-items-center">
-        <button type="button" class="btn btn-primary" onclick="location.href = 'https://www.dialogika.co/en';">
-          Click Here for English Version
-        </button>
-        
+                
       </div>
       <div class="d-none d-lg-flex social-links align-items-center">
         <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>

@@ -123,8 +123,8 @@
 /* Tablet (min-width: 768px) and (max-width: 1020px) */
 @media (min-width: 768px) and (max-width: 1020px) {
   #main #hero {
-    height: 60vh;
-    padding: 0 0;
+    height: fit-content;
+    padding-top: 120px;
   }
   #hero.d-flex.align-items-center.position-relative {
     height: 50vh;
