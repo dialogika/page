@@ -1,3 +1,23 @@
+function sendWhatsAppMessage(button) {
+  // WhatsApp Settings
+  var walink = "https://web.whatsapp.com/send",
+    phone = "6285162992597",
+    walink2 = "Salam Hangat, Saya melihat *Website dialogika.co* dan saya tertarik untuk tahu lebih lanjut mengenai.",
+    program = button.getAttribute("data-program"); 
+
+  // Smartphone Support
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    walink = "whatsapp://send";
+  }
+
+  // Final WhatsApp Message
+  var blanter_whatsapp =
+    walink + "?phone=" + phone + "&text=" + walink2 + "%0A%0A" + "*Program Jakarta* : " + program;
+
+  // Open WhatsApp
+  window.open(blanter_whatsapp, "_blank");
+}
+
 $(document).on("click", ".send_contact", function () {
   var input_blanter = document.getElementById("names");
 
@@ -12,11 +32,7 @@ $(document).on("click", ".send_contact", function () {
     text_no = "Isi semua Formulir lalu klik Kirim.";
 
   // Smartphone Support
-  if (
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      navigator.userAgent
-    )
-  ) {
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     walink = "whatsapp://send";
   }
 
@@ -50,11 +66,9 @@ $(document).on("click", ".send_contact", function () {
 
     // WhatsApp Window Open
     window.open(blanter_whatsapp, "_blank");
-    document.getElementById("text-info").innerHTML =
-      '<span class="yes">' + text_yes + "</span>";
+    document.getElementById("text-info").innerHTML = '<span class="yes">' + text_yes + "</span>";
   } else {
-    document.getElementById("text-info").innerHTML =
-      '<span class="no">' + text_no + "</span>";
+    document.getElementById("text-info").innerHTML = '<span class="no">' + text_no + "</span>";
   }
 });
 
@@ -72,11 +86,7 @@ const redirectWA = () => {
     text_no = "Isi semua Formulir lalu klik Kirim.";
 
   // Smartphone Support
-  if (
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      navigator.userAgent
-    )
-  ) {
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     walink = "whatsapp://send";
   }
 
