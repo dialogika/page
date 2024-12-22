@@ -1,3 +1,25 @@
+function sendWhatsAppMessage(button) {
+  // WhatsApp Settings
+  var walink = "https://web.whatsapp.com/send",
+    phone = "6285162992597",
+    baseMessage = "Salam Hangat, saya melihat *Website dialogika.co* dan tertarik banget dengan program",
+    program = button.getAttribute("data-program");
+
+  var additionalMessage = "apakah masih ada quota? - dari website (fb/ig)";
+
+  // Smartphone Support
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    walink = "whatsapp://send";
+  }
+
+  // Final WhatsApp Message
+  var blanter_whatsapp =
+    walink + "?phone=" + phone + "&text=" + baseMessage + " " + program + "%0A%0A" + additionalMessage;
+
+  // Open WhatsApp
+  window.open(blanter_whatsapp, "_blank");
+}
+
 $(document).on("click", ".send_contact", function () {
   var input_blanter = document.getElementById("names");
 
@@ -12,11 +34,7 @@ $(document).on("click", ".send_contact", function () {
     text_no = "Isi semua Formulir lalu klik Kirim.";
 
   // Smartphone Support
-  if (
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      navigator.userAgent
-    )
-  ) {
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     walink = "whatsapp://send";
   }
 
@@ -49,12 +67,9 @@ $(document).on("click", ".send_contact", function () {
       "%0A";
 
     // WhatsApp Window Open
-      window.open(blanter_whatsapp, "_blank");
-      document.getElementById("text-info").innerHTML =
-        '<span class="yes">' + text_yes + "</span>";
-
+    window.open(blanter_whatsapp, "_blank");
+    document.getElementById("text-info").innerHTML = '<span class="yes">' + text_yes + "</span>";
   } else {
-    document.getElementById("text-info").innerHTML =
-      '<span class="no">' + text_no + "</span>";
+    document.getElementById("text-info").innerHTML = '<span class="no">' + text_no + "</span>";
   }
 });
