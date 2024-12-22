@@ -24,7 +24,6 @@ $(document).on("click", ".send_contact", function () {
     /* Call Input Form */
     var input_name2 = $("#names").val(),
       input_domisili2 = $("#locations").val(),
-      input_job2 = $("#works").val(),
       input_program2 = $("#programs :selected").text();
     input_message2 = $("#messages").val();
 
@@ -44,9 +43,6 @@ $(document).on("click", ".send_contact", function () {
       "%0A" +
       "*Program*      : " +
       input_program2 +
-      "%0A" +
-      "*Perkerjaan*   : " +
-      input_job2 +
       "%0A" +
       "*Isi Message*  : " +
       input_message2 +
