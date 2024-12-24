@@ -1,3 +1,44 @@
+// ? Function untuk cek id custom field dari clickup. Buka browser dev tool untuk lihat response dan daftar id-idnya.
+// ? Buat button dengan id "getClickupData" untuk menggunakan function ini
+const handleGetClickupIds = async (event) => {
+    event.preventDefault();
+    const apiToken = "pk_3640079_B56O8X0HW6FAEIZJFFJAQW99IAHQMF8N";
+    const listId = "14355106"; // Ganti dengan id yng sesuai. Contoh link https://app.clickup.com/2307700/v/li/14355106 <- ambil setelah /li
+    let taskId = null; // Variabel untuk menyimpan task ID
+  
+    console.log("hello world ini ambil data");
+  
+    try {
+      // Langkah 1: Send GET Request ke Clickup
+      const checkTaskResponse = await fetch(`https://api.clickup.com/api/v2/list/${listId}/field`, {
+        method: "GET",
+        headers: {
+          Authorization: apiToken,
+          "Content-Type": "application/json",
+        },
+      });
+  
+      if (!checkTaskResponse.ok) {
+        throw new Error("Gagal memeriksa duplikasi tugas.");
+      }
+  
+      const tasks = await checkTaskResponse.json(); // response data dari clickup
+  
+      // Variable sementara untuk menyimpan nomor whatsapp dan task yang sama.
+      let existingWA = null;
+      let matchedTask = null;
+      console.log("ini response:", checkTaskResponse);
+      console.log("ini tasks :", tasks);
+    } catch (error) {
+      console.log("terjadi kesalahan !", error);
+    }
+  };
+  
+  // | Masukkan function handleGetClickupIds ke element button dengan id getClickupData untuk mengambil id dan value custom_fields clickup
+  const getClickupData = document.getElementById("getClickupData");
+  if (getClickupData) getClickupData.addEventListener("click", handleGetClickupIds);
+  
+
 document.getElementById('uploadForm').addEventListener('submit', async function (event) {
     event.preventDefault();
     let whatsapp = document.getElementById('whatsapp').value;
@@ -35,6 +76,10 @@ document.getElementById('uploadForm').addEventListener('submit', async function 
                     {
                         id: 'cebb3fac-770a-4d4d-9056-1cab027bf9e1',
                         value: address
+                    },
+                    {
+                        id: '0928d307-37dc-47e3-9ed4-ddc1bf73e4e7',
+                        value: ['03a4d146-a239-4156-b368-ba620c3a0dd4']
                     },
                     {
                         id: '76680f29-6988-4d55-ab67-508f051c2ed9', // Custom field ID for WhatsApp URL
