@@ -34,7 +34,6 @@ const handleNewTask = async (event) => {
 
   const loading = document.querySelector(".loading");
   const success = document.querySelector(".success");
-  console.log("ini clickup 1");
   if (!program) {
     alert("Program harus dipilih.");
     return;
@@ -63,19 +62,19 @@ const handleNewTask = async (event) => {
   ];
 
   try {
-    console.log("ini clickup 2");
     loading.style.display = "flex";
-    console.log("ini clickup 3");
 
     await createNewTask(listId, name, custom_fields, description);
 
     loading.style.display = "none";
     success.style.display = "flex";
-
+    
     setTimeout(() => {
       success.style.display = "none";
     }, 10000);
   } catch (error) {
+    success.style.display = "none";
+    loading.style.display = "none";
     console.error("Kesalahan:", error);
     alert("Terjadi kesalahan. Silakan coba lagi.");
   }
