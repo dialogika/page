@@ -697,7 +697,7 @@
 
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box w-100" data-aos="fade-up" data-aos-delay="100">
               <div class="icon">
                 <img loading="lazy" src="assets/img/home/course-before.webp" class="course-social-1 ">
                 <img loading="lazy" src="assets/img/home/course-after.webp" class="course-social-2 ">
@@ -710,7 +710,7 @@
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box w-100" data-aos="fade-up" data-aos-delay="200">
               <div class="icon">
                 <img loading="lazy" src="assets/img/home/in-house-before.webp" class="course-social-1 ">
                 <img loading="lazy" src="assets/img/home/in-house-after.webp" class="course-social-2 ">
@@ -722,7 +722,7 @@
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box w-100" data-aos="fade-up" data-aos-delay="300">
               <div class="icon">
                 <img loading="lazy" src="assets/img/home/excellence-before.webp" class="course-social-1 ">
                 <img loading="lazy" src="assets/img/home/excellence-after.webp" class="course-social-2 ">
@@ -735,7 +735,7 @@
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-box w-100" data-aos="fade-up" data-aos-delay="400">
               <div class="icon">
                 <img loading="lazy" src="assets/img/home/module-before.webp" class="course-social-1 ">
                 <img loading="lazy" src="assets/img/home/module-after.webp" class="course-social-2 ">
@@ -767,20 +767,28 @@
               <p class="title-desc text-muted mt-3">Ambil paket Basic Plus (hemat) <span class="badge text-bg-success">
                   lebih hemat</span> dengan value lebih banyak! </p>
 
-              <div class="pricing-tabs mt-4">
-                <ul class="nav nav-pills rounded justify-content-center d-inline-block py-1 px-2" id="pills-tab"
+              <!-- Untuk script ganti pricing box berada di part/pricing/switch-price.js -->
+              <div class="pricing-tabs my-4 mb-xl-0 custom-pricing">
+                <ul class="nav nav-pills rounded d-flex justify-content-around flex-wrap w-100 gap-0" id="pills-tab"
                   role="tablist">
-                  <li class="nav-item d-inline-block ">
-                    <a class="nav-link px-3 rounded active action-class" id="action-class" data-bs-toggle="pill"
-                      href="#action-classes" role="tab" aria-controls="jogjas" aria-selected="false">
+                  <li class="nav-item d-inline-block">
+                    <button type="button" class="nav-link px-3 rounded custom-price-button active" role="tab"
+                      id="custom-price-button" data-target="action-class-content">
                       Action Play
-                    </a>
+                    </button>
                   </li>
-                  <li class="nav-item d-inline-block ">
-                    <a class="nav-link px-3 rounded basic-class" id="basic-class" data-bs-toggle="pill"
-                      href="#basic-classes" role="tab" aria-controls="tangsels" aria-selected="false">
-                      Hemat <span class="badge bg-success rounded text-white">40% Off</span>
-                    </a>
+                  <li class="nav-item d-inline-block">
+                    <button type="button" class="nav-link px-3 rounded custom-price-button" role="tab"
+                      id="custom-price-button" data-target="basic-class-content">
+                      Basic Class
+                    </button>
+                  </li>
+
+                  <li class="nav-item d-inline-block">
+                    <button type="button" class="nav-link px-3 rounded custom-price-button" id="action-class" role="tab"
+                      id="custom-price-button" data-target="basic-plus-content">
+                      Basic Plus <span class="badge bg-success rounded text-white">40% Off</span>
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -791,7 +799,7 @@
           <div class="col-lg-7 g-0 offset-lg-1">
             <div class="tab-content" id="pills-tabContent">
               <!-- Action Class Section -->
-              <div class="tab-pane fade active show" id="action-classes" role="tabpanel" aria-labelledby="action-class">
+              <div class="tab-pane custom-price-content fade active show" id="action-class-content" role="tabpanel">
                 <div class="row g-0 align-items-center">
                   <div class="col-lg-6">
                     <div class="pricing-box active bg-white rounded mt-4">
@@ -833,7 +841,8 @@
                         <a data-program="*Action Play senilai 249K*."
                           class="btn btn-green w-100 title-change-registration"
                           onclick="sendWhatsAppMessage(this)">Daftar Sekarang</a>
-                        <a class="btn btn-primary w-100 title-change-consultation" onclick="askAdminMessage(this)" data-program="Action Play">Tanya Admin</a>
+                        <a class="btn btn-primary w-100 title-change-consultation" onclick="askAdminMessage(this)"
+                          data-program="Action Play">Tanya Admin</a>
                       </div>
                     </div>
                   </div>
@@ -885,8 +894,151 @@
               </div>
               <!-- End of Action Class Section -->
 
-              <!-- Basic Class Section -->
-              <div class="tab-pane fade" id="basic-classes" role="tabpanel" aria-labelledby="basic-class">
+              <!-- basic Class Section -->
+              <div class="tab-pane custom-price-content fade" id="basic-class-content" role="tabpanel">
+                <div class="row g-0 align-items-center">
+                  <div class="col-lg-6">
+                    <div class="pricing-box active bg-white rounded mt-4">
+                      <div class="pricing-badge">
+                        <span class="badge">Best Choice</span>
+                      </div>
+
+                      <h5 class="fw-normal">Basic Class</h5>
+                      <h1 class="pricing-title mt-3 mb-0">IDR 499.000
+                        <span class="f-13"> <strike>IDR 1.000.000</strike></span>
+                      </h1>
+                      <p class="text-muted f-15 mt-3">Fokus pembelajaran: bisa bicara tanpa persiapan dan teratur
+                        didalam berbicara</p>
+
+                      <hr class="mt-4">
+
+                      <div class="mt-4 pt-1">
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          <b>Garansi</b> mengulang kelas (1 Kali)
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          <b>7x pertemuan</b> dalam sebulan
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          Maksimal peserta <b>9 orang</b>
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          Durasi kelas <b>90 menit</b>
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          Hari <b>FIXED</b>, Jam <b>19:30 WIB</b>
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          eCertificate
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          eModule & eBook
+                        </p>
+                        <p class="mb-3 f-16 text-secondary">
+                          <i class='bx bxs-x-circle' style="color:#E71B2B"></i>
+                          <del>
+                            Recording Kelas
+                          </del>
+                        </p>
+                        <p class="mb-3 f-16 text-secondary">
+                          <i class='bx bxs-x-circle' style="color:#E71B2B"></i>
+                          <del>
+                            Reminder Kelas
+                          </del>
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          Free <b>webinar</b> setiap bulan w/ CEO
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          Free <b>materi</b> setiap minggu
+                        </p>
+                      </div>
+                      <div class="mt-4 pt-2 text-center">
+
+                        <a data-program="*Basic Class senilai 499K*."
+                          class="btn btn-green w-100 title-change-registration"
+                          onclick="sendWhatsAppMessage(this)">Daftar Sekarang</a>
+                        <a href="#contact" class="btn btn-primary w-100">Tanya Admin</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="pricing-box bg-white rounded mt-4">
+                      <h5 class="fw-normal">Basic Plus Private</h5>
+                      <h1 class="pricing-title mt-3 mb-0">IDR 987.000
+                        <span class="f-13"> <strike>IDR 2.000.000</strike></span>
+                      </h1>
+                      <p class="text-muted f-15 mt-3">Fokus pembelajaran: Bisa berbicara tanpa persiapan</p>
+                      <div class="mt-4 pt-1">
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          <b>Garansi</b> mengulang kelas
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          <b>7x pertemuan</b> hingga selesai
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          Maksimal peserta <b>1-3 orang</b>
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          Durasi kelas <b>90 menit</b>
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          Hari & Jam <b>Flexible</b>
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          eCertificate
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          eModule & eBook
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          Recording Kelas
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          Reminder Kelas
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          Free <b>webinar</b> setiap bulan w/ CEO
+                        </p>
+                        <p class="mb-3 f-16">
+                          <i class='bx bxs-check-circle' style="color:#009961"></i>
+                          Free <b>materi</b> setiap minggu
+                        </p>
+                      </div>
+                      <div class="mt-4 pt-2 text-center">
+                        <a data-program="*Basic Plus Private senilai 987K*."
+                          class="btn btn-green w-100 title-change-registration"
+                          onclick="sendWhatsAppMessage(this)">Daftar Sekarang</a>
+                        <a href="#contact" class="btn btn-primary w-100">Tanya Admin</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of basic Plus Section -->
+
+              <!-- basic Plus Section -->
+              <div class="tab-pane custom-price-content fade" id="basic-plus-content" role="tabpanel">
                 <div class="row g-0 align-items-center">
                   <div class="col-lg-6">
                     <div class="pricing-box active bg-white rounded mt-4">
@@ -942,11 +1094,11 @@
                         </p>
                         <p class="mb-3 f-16">
                           <i class='bx bxs-check-circle' style="color:#009961"></i>
-                          Gratis <b>webinar</b> setiap bulan w/ CEO
+                          Free <b>webinar</b> setiap bulan w/ CEO
                         </p>
                         <p class="mb-3 f-16">
                           <i class='bx bxs-check-circle' style="color:#009961"></i>
-                          Dapat <b>materi</b> setiap minggu
+                          Free <b>materi</b> setiap minggu
                         </p>
                       </div>
                       <div class="mt-4 pt-2 text-center">
@@ -1022,7 +1174,7 @@
                   </div>
                 </div>
               </div>
-              <!-- End of Basic Class Section -->
+              <!-- End of basic Plus Section -->
 
 
             </div>
@@ -1105,6 +1257,7 @@
                     </optgroup>
 
                     <optgroup label="7x Pertemuan">
+                      <option value="79fadca9-b5f2-4566-91d0-1b5aaa420cdf" id="basic-plus">Basic Class: 499K</option>
                       <option value="ed0a3dcf-c582-4c6d-918e-98842d75be7c" id="basic-plus">Basic Plus: 599K</option>
                       <option value="7a4ccb01-3ac3-497c-b7b3-e8ab6683e8c0" id="basic-private">Basic Private: 987K
                       </option>
@@ -1764,6 +1917,7 @@
   <script src="assets/part/modals/modal-component.js"></script>
   <script src="assets/part/read-more/read-more_less.js"></script>
   <script src="assets/part/atropos/script.js"></script>
+  <script src="assets/part/pricing/switch-price.js"></script>
 
 
   <script src="assets/part/custom-landing-page-online/custom-landing-page-online.js"></script>

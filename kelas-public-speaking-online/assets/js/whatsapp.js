@@ -20,6 +20,27 @@ function sendWhatsAppMessage(button) {
   window.open(blanter_whatsapp, "_blank");
 }
 
+function askAdminMessage(button) {
+  // WhatsApp Settings
+  var walink = "https://web.whatsapp.com/send",
+    phone = "6285162992597",
+    baseMessage = "Salam Hangat, saya melihat *Website dialogika.co* dan ingin bertanya terkait program",
+    program = button.getAttribute("data-program");
+
+  var additionalMessage = "apakah masih ada quota? - dari website (fb/ig)";
+
+  // Smartphone Support
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    walink = "whatsapp://send";
+  }
+
+  // Final WhatsApp Message
+  var blanter_whatsapp = walink + "?phone=" + phone + "&text=" + baseMessage + " " + `"*  ${program}*"` + "%0A%0A";
+
+  // Open WhatsApp
+  window.open(blanter_whatsapp, "_blank");
+}
+
 $(document).on("click", ".send_contact", function () {
   var input_blanter = document.getElementById("names");
 
