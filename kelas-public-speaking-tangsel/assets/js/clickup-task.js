@@ -27,7 +27,7 @@ document.getElementById('uploadForm').addEventListener('submit', async function 
     // Mengambil semua checkbox channel yang dicentang dan memasukkannya ke array
     const channels = Array.from(channelCheckboxes).map(checkbox => checkbox.value);
 
-    Validasi sederhana untuk memastikan semua kolom diisi sebelum dikirim
+    // Validasi sederhana untuk memastikan semua kolom diisi sebelum dikirim
     if (!name || !program || !note) {
         alert('Semua kolom harus diisi.');
         return;
@@ -52,7 +52,7 @@ document.getElementById('uploadForm').addEventListener('submit', async function 
     success.style.display = 'none';
 
     // API Token dan List ID ClickUp untuk otentikasi dan referensi
-    const apiToken = 'pk_3640079_B56O8X0HW6FAEIZJFFJAQW99IAHQMF8N';
+    const apiToken = 'pk_276677813_5LZTC2L1TYHRVBRRRK5BKXBZDVUU2X7E';
     const listId = '14355106';
 
     try {
