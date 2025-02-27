@@ -1,7 +1,7 @@
 function sendWhatsAppMessage(button) {
   // WhatsApp Settings
   var walink = "https://web.whatsapp.com/send",
-    phone = "6285162992597",
+    phone = "6285780007799",
     baseMessage = "Salam Hangat, saya melihat *Website dialogika.co* dan tertarik banget dengan program",
     program = button.getAttribute("data-program");
 
@@ -23,7 +23,7 @@ function sendWhatsAppMessage(button) {
 function askAdminMessage(button) {
   // WhatsApp Settings
   var walink = "https://web.whatsapp.com/send",
-    phone = "6285162992597",
+    phone = "6285780007799",
     baseMessage = "Salam Hangat, saya melihat *Website dialogika.co* dan ingin bertanya terkait program",
     program = button.getAttribute("data-program");
 
@@ -46,7 +46,7 @@ $(document).on("click", ".send_contact", function () {
 
   // WhatsApp Settings
   var walink = "https://web.whatsapp.com/send",
-    phone = "6285162992597",
+    phone = "6285780007799",
     walink2 =
       "Salam Hangat, Saya melihat *Website dialogika.co* dan saya tertarik untuk tahu lebih lanjut." +
       "%0A%0A" +
