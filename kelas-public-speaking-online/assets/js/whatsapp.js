@@ -1,3 +1,4 @@
+// Function sendWhatsAppMessage digunakan saat user click DAFTAR SEKARANG di pricing
 function sendWhatsAppMessage(button) {
   // WhatsApp Settings
   var walink = "https://web.whatsapp.com/send",
@@ -20,6 +21,7 @@ function sendWhatsAppMessage(button) {
   window.open(blanter_whatsapp, "_blank");
 }
 
+// Function askAdminMessage digunakan saat user click TANYA ADMIN di pricing
 function askAdminMessage(button) {
   // WhatsApp Settings
   var walink = "https://web.whatsapp.com/send",
