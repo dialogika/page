@@ -1,2 +1,8 @@
-# Dialogika 404 Error Handling
+# Dialogika Global 404 Error Handling
+# Mengarahkan semua error 404 dari halaman mana saja ke file /404.html di luar (root)
 ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+</IfModule>
