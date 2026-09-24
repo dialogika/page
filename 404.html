@@ -1,806 +1,250 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <base href="/">
 
-  <title>404 Not Found | Dialogika</title>
-  <meta content="Program, link, event, kegiatan yang anda tuju sudah tidak ada lagi atau expired" name="description">
-  <meta content="public speaking, dialogika" name="keywords">
-  <meta name="author" content="Dialogika">
+  <title>404 Not Found | Kelas Public Speaking Jogja | Dialogika</title>
+  <meta content="Program / Pelatihan / Layanan atau LINK yang anda cari sudah expired" name="description">
+  <meta content="public speaking" name="keywords">
 
   <!-- Favicons -->
-  <link href="https://dialogika.co/assets/img/favicon.webp" rel="icon">
-  <link href="https://dialogika.co/assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+  <link href="assets/img/favicon.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+
+  <!-- OG Meta Tags to share -->
+  <meta property="og:site_name" content="Kelas Public Speaking" />
+  <meta property="og:site" content="dialogika.co/" />
+  <meta property="og:title" content="404 Not Found | Kelas Public Speaking Jogja | Dialogika" />
+  <meta property="og:description" content="Program / Pelatihan / Layanan atau LINK yang anda cari sudah expired" />
+  <meta property="og:image" content="assets/img/hero-bg.webp" />
+  <meta property="og:url" content="www.dialogika.co/" />
+  <meta property="og:type" content="page" />
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap Icons & Boxicons CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: "Poppins", "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-      color: #333333;
-      background-color: #ffffff;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* === TOP BAR === */
-    .topbar-wrap {
-      background: #ffffff;
-      border-bottom: 1px solid #f1f3f7;
-      padding: 7px 0;
-      font-size: 13px;
-    }
-
-    .topbar-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .topbar-left {
-      display: flex;
-      gap: 25px;
-      align-items: center;
-    }
-
-    .topbar-left a {
-      color: #555555;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .topbar-left a:hover {
-      color: #1240a4;
-    }
-
-    .topbar-left i {
-      color: #1a56db;
-      font-size: 14px;
-    }
-
-    .topbar-social {
-      display: flex;
-      gap: 14px;
-      align-items: center;
-    }
-
-    .topbar-social a {
-      color: #555555;
-      font-size: 14px;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .topbar-social a:hover {
-      color: #1a56db;
-    }
-
-    /* === HEADER / NAVBAR === */
-    .header-wrap {
-      background: #ffffff;
-      padding: 16px 0;
-      border-bottom: 1px solid #f5f6f8;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .header-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .header-logo {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-    }
-
-    .header-logo img {
-      max-height: 38px;
-      width: auto;
-    }
-
-    .header-nav {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      list-style: none;
-    }
-
-    .header-nav li a {
-      color: #4b5563;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 500;
-      transition: color 0.2s;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-
-    .header-nav li a:hover {
-      color: #1e40af;
-    }
-
-    .btn-register {
-      background: linear-gradient(135deg, #113f8f 0%, #162a5b 100%);
-      color: #ffffff !important;
-      border-radius: 50px;
-      padding: 8px 24px;
-      font-weight: 600;
-      font-size: 13.5px;
-      text-decoration: none;
-      display: inline-block;
-      box-shadow: 0 4px 14px rgba(17, 63, 143, 0.35);
-      transition: all 0.25s ease;
-    }
-
-    .btn-register:hover {
-      opacity: 0.93;
-      transform: translateY(-1px);
-    }
-
-    /* === BREADCRUMBS === */
-    .breadcrumb-wrap {
-      background-color: #f7f9fd;
-      padding: 24px 0;
-      border-bottom: 1px solid #edf1f7;
-    }
-
-    .breadcrumb-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .breadcrumb-title {
-      font-size: 26px;
-      font-weight: 700;
-      color: #14376c;
-      margin: 0;
-    }
-
-    .breadcrumb-nav {
-      font-size: 14px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .breadcrumb-nav a {
-      color: #1a56db;
-      text-decoration: none;
-    }
-
-    .breadcrumb-nav span {
-      color: #8c98a9;
-    }
-
-    /* === 404 CONTENT === */
-    .content-wrap {
-      padding: 100px 20px;
-      text-align: center;
-      background: #ffffff;
-    }
-
-    .badge-expired {
-      display: inline-block;
-      background-color: #e0ecff;
-      color: #1449a6;
-      font-size: 12.5px;
-      font-weight: 700;
-      letter-spacing: 0.8px;
-      padding: 7px 22px;
-      border-radius: 50px;
-      margin-bottom: 24px;
-    }
-
-    .title-expired {
-      font-size: 38px;
-      font-weight: 800;
-      color: #333d4b;
-      letter-spacing: 0.5px;
-      margin-bottom: 14px;
-    }
-
-    .desc-expired {
-      font-size: 16px;
-      color: #697386;
-      max-width: 700px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-
-    /* === FOOTER === */
-    .footer-wrap {
-      background: #02122c;
-      color: #ffffff;
-      padding: 60px 0 25px 0;
-      font-size: 13.5px;
-    }
-
-    .footer-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr 1fr 1fr;
-      gap: 36px;
-    }
-
-    .footer-logo {
-      font-size: 24px;
-      font-weight: 800;
-      color: #f5a623;
-      letter-spacing: 1px;
-      margin-bottom: 16px;
-    }
-
-    .footer-text {
-      color: #cbd5e1;
-      font-size: 13px;
-      line-height: 1.65;
-      margin-bottom: 14px;
-    }
-
-    .footer-heading {
-      color: #f5a623;
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 14px;
-    }
-
-    .contact-icons {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 16px;
-    }
-
-    .icon-btn {
-      width: 42px;
-      height: 42px;
-      border-radius: 8px;
-      background: #e59819;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: #02122c;
-      font-size: 20px;
-      text-decoration: none;
-      transition: all 0.2s ease;
-    }
-
-    .icon-btn:hover {
-      background: #f7a928;
-      transform: translateY(-2px);
-    }
-
-    .contact-info-list {
-      color: #cbd5e1;
-      font-size: 13px;
-      line-height: 1.8;
-      margin-bottom: 16px;
-    }
-
-    .contact-info-list strong {
-      color: #ffffff;
-    }
-
-    .social-follow-btns {
-      display: flex;
-      gap: 8px;
-    }
-
-    .social-follow-btns a {
-      width: 32px;
-      height: 32px;
-      background: #e59819;
-      color: #02122c;
-      border-radius: 6px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      font-size: 16px;
-      transition: 0.2s;
-    }
-
-    .social-follow-btns a:hover {
-      background: #f7a928;
-      transform: translateY(-2px);
-    }
-
-    .footer-links-list {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 20px 0;
-    }
-
-    .footer-links-list li {
-      padding: 6px 0;
-      display: flex;
-      align-items: center;
-    }
-
-    .footer-links-list li a {
-      color: #cbd5e1;
-      text-decoration: none;
-      font-size: 13px;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: color 0.2s;
-    }
-
-    .footer-links-list li a:hover {
-      color: #f5a623;
-    }
-
-    .footer-links-list li a i {
-      color: #f5a623;
-      font-size: 11px;
-    }
-
-    .badge-selling {
-      background-color: #02a3bd;
-      color: #ffffff;
-      font-size: 10px;
-      font-weight: 700;
-      padding: 2px 7px;
-      border-radius: 12px;
-      margin-left: 6px;
-    }
-
-    /* Instagram Posts */
-    .ig-post-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 12px;
-      text-decoration: none;
-    }
-
-    .ig-post-thumb {
-      width: 58px;
-      height: 58px;
-      border-radius: 8px;
-      background: #1e3a6d;
-      object-fit: cover;
-      flex-shrink: 0;
-    }
-
-    .ig-post-info a {
-      color: #cbd5e1;
-      font-size: 12px;
-      line-height: 1.4;
-      text-decoration: none;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-
-    .ig-post-info a:hover {
-      color: #f5a623;
-    }
-
-    .ig-post-date {
-      color: #94a3b8;
-      font-size: 11px;
-      margin-top: 3px;
-    }
-
-    /* Subscribe & Payment */
-    .sub-desc {
-      color: #cbd5e1;
-      font-size: 13px;
-      line-height: 1.5;
-      margin-bottom: 12px;
-    }
-
-    .sub-form {
-      display: flex;
-      border-radius: 50px;
-      overflow: hidden;
-      background: #ffffff;
-      padding: 3px;
-      margin-bottom: 24px;
-    }
-
-    .sub-form input {
-      flex: 1;
-      border: none;
-      padding: 8px 14px;
-      font-size: 13px;
-      outline: none;
-      background: transparent;
-      color: #333;
-    }
-
-    .sub-form button {
-      background: #1449a6;
-      color: #ffffff;
-      border: none;
-      border-radius: 50px;
-      padding: 8px 18px;
-      font-size: 13px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-
-    .sub-form button:hover {
-      background: #0f367e;
-    }
-
-    .payment-sec {
-      margin-bottom: 20px;
-    }
-
-    .payment-label {
-      color: #cbd5e1;
-      font-size: 12px;
-      margin-bottom: 6px;
-    }
-
-    .payment-logos {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-bottom: 12px;
-    }
-
-    .payment-badge {
-      background: #ffffff;
-      color: #02122c;
-      padding: 3px 8px;
-      border-radius: 4px;
-      font-size: 11px;
-      font-weight: 700;
-    }
-
-    .ham-card {
-      border: 1px solid #f5a623;
-      border-radius: 8px;
-      padding: 12px;
-      font-size: 11px;
-      color: #cbd5e1;
-      line-height: 1.5;
-    }
-
-    .ham-card strong {
-      color: #ffffff;
-    }
-
-    .ham-icon {
-      color: #f5a623;
-      font-size: 26px;
-      margin-bottom: 4px;
-    }
-
-    /* Footer Bottom Bar */
-    .footer-bottom {
-      max-width: 1200px;
-      margin: 40px auto 0 auto;
-      padding: 20px 20px 0 20px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 13px;
-      color: #94a3b8;
-    }
-
-    .footer-bottom-social {
-      display: flex;
-      gap: 8px;
-    }
-
-    .footer-bottom-social a {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.1);
-      color: #ffffff;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      font-size: 14px;
-      transition: all 0.2s;
-    }
-
-    .footer-bottom-social a:hover {
-      background: #f5a623;
-      color: #02122c;
-    }
-
-    @media (max-width: 1024px) {
-      .footer-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .header-nav {
-        display: none;
-      }
-
-      .footer-container {
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
-
-      .breadcrumb-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-      }
-
-      .title-expired {
-        font-size: 26px;
-      }
-
-      .footer-bottom {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-      }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.css" rel="stylesheet">
+
+  <!-- Part CSS Files -->
+  <link href="assets/part/pricing/pricing.css" rel="stylesheet">
+  <link href="assets/part/category/category.css" rel="stylesheet">
+  <link href="assets/part/course/course.css" rel="stylesheet">
+  <link href="assets/part/theme-counter/theme-counter.css" rel="stylesheet">
+  <link href="assets/part/features-small/features-small.css" rel="stylesheet">
+  <link href="assets/part/testimoni-insurin/testi.css" rel="stylesheet">
+  <link href="assets/part/portfolio-insurin/portfolio.css" rel="stylesheet">
+  <link href="assets/part/services-insurin/service.css" rel="stylesheet">
+  <link href="assets/part/recent-append/recent-post.css" rel="stylesheet">
+  <link href="assets/part/cta-append/cta.css" rel="stylesheet">
+  
+  <!--  CDN  -->
+  <script src="https://kit.fontawesome.com/cdde75dea2.js" crossorigin="anonymous"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!--  ========================================================  -->
+        <!-- Spreadsheet API Form Pendaftaran -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+          crossorigin="anonymous"></script>
+        <script>
+          function HeroForm() {
+            $.ajax({
+              url: "https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
+              type: "post",
+              data: $("#hero-form").serializeArray(),
+              headers: {
+                accessKey: "b5216464a11be561ae0b40f9ed98ee90",
+                secretKey: "038c9369d3b221f2387c9d8f3f3e488d"
+              },
+              success: function () {
+                window.location.href = "https://api.whatsapp.com/send?phone=6285162992597&text=Haloo%20kak%20saya%20tertarik%20dengan%20program%20public%20speaking%20dialogika%0A%0A%60%60%60dari%20halaman%20home%20dialogika%60%60%60";
+              },
+              error: function () {
+                alert("There was an error :(")
+              }
+            });
+          }
+
+          function SubForm() {
+            $.ajax({
+              url: "https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
+              type: "post",
+              data: $("#myForm").serializeArray(),
+              headers: {
+                accessKey: "b5216464a11be561ae0b40f9ed98ee90",
+                secretKey: "038c9369d3b221f2387c9d8f3f3e488d"
+              },
+              success: function () {
+                alert("Form Data Submitted :)")
+                // $('#notifications').modal('show');
+              },
+              error: function () {
+                alert("There was an error :(")
+              }
+            });
+          }
+
+          function Subcription() {
+            $.ajax({
+              url: "https://api.apispreadsheets.com/data/18511/",
+              type: "post",
+              data: $("#subcriptions").serializeArray(),
+              success: function () {
+                // $('#subcription-modal').modal('show');
+                // open("https://link.dialogika.co/open-whatsapp-group");
+                window.location.href = "https://link.dialogika.co/open-whatsapp-group";
+              },
+              error: function () {
+                alert("There was an error :(")
+              }
+            });
+          }
+        </script>
+        <!-- End Spreadsheet API Form Pendaftaran -->
+
+        <!-- Meta Pixel Code -->
+        <script>
+          !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+              n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+          }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '916674555903437');
+          fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=916674555903437&ev=PageView&noscript=1" /></noscript>
+        <!-- End Meta Pixel Code -->
+
+        <!-- Pixel Quora -->
+        <!-- DO NOT MODIFY -->
+        <!-- Quora Pixel Code (JS Helper) -->
+        <script>
+          !function (q, e, v, n, t, s) { if (q.qp) return; n = q.qp = function () { n.qp ? n.qp.apply(n, arguments) : n.queue.push(arguments); }; n.queue = []; t = document.createElement(e); t.async = !0; t.src = v; s = document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, 'script', 'https://a.quora.com/qevents.js');
+          qp('init', 'cae6711903da464ab62f03df5f66aedc');
+          qp('track', 'ViewContent');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+            src="https://q.quora.com/_/ad/cae6711903da464ab62f03df5f66aedc/pixel?tag=ViewContent&noscript=1" /></noscript>
+        <!-- End of Quora Pixel Code -->
+        <script>qp('track', 'GenerateLead');</script>
+        <!-- End Pixel Quora -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HV60XT856G"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+
+          gtag('config', 'UA-148836422-2');
+          gtag('config', 'G-HV60XT856G');
+        </script>
+        <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+        <!-- Google Tag Manager -->
+        <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+              'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+          })(window, document, 'script', 'dataLayer', 'GTM-KGK9D6H');</script>
+        <!-- End Google Tag Manager -->
+
+        <!-- Hotjar Tracking Code for https://dialogika.co -->
+        <script>
+          (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2828594, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+          })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+        </script>
+        <!-- End Hotjar -->
+  <!--  ========================================================  -->
 </head>
 
 <body>
 
-  <!-- Top Bar -->
-  <div class="topbar-wrap">
-    <div class="topbar-container">
-      <div class="topbar-left">
-        <a href="mailto:admin@dialogika.co">
-          <i class="bi bi-envelope"></i>
-          <span>admin@dialogika.co</span>
-        </a>
-        <a href="tel:+6285162992597">
-          <i class="bi bi-phone"></i>
-          <span>+62 851 6299 2597</span>
-        </a>
-      </div>
-      <div class="topbar-social">
-        <a href="https://twitter.com/dialogika"><i class="bi bi-twitter"></i></a>
-        <a href="https://facebook.com/dialogika"><i class="bi bi-facebook"></i></a>
-        <a href="https://instagram.com/dialogika"><i class="bi bi-instagram"></i></a>
-        <a href="https://linkedin.com/company/dialogika"><i class="bi bi-linkedin"></i></a>
-      </div>
-    </div>
-  </div>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGK9D6H" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript><!-- End Google Tag Manager (noscript) -->
 
-  <!-- Header -->
-  <header class="header-wrap">
-    <div class="header-container">
-      <a href="https://dialogika.co" class="header-logo">
-        <img src="https://dialogika.co/assets/img/logo.webp" alt="DIALOGIKA">
-      </a>
-      <ul class="header-nav">
-        <li><a href="https://dialogika.co">Home</a></li>
-        <li><a href="https://dialogika.co/program">Program <i class="bi bi-chevron-down" style="font-size: 10px;"></i></a></li>
-        <li><a href="https://dialogika.co/sertifikasi">Sertifikasi</a></li>
-        <li><a href="https://dialogika.co/corporate">Corporate</a></li>
-        <li><a href="https://dialogika.co/more">More <i class="bi bi-chevron-down" style="font-size: 10px;"></i></a></li>
-      </ul>
-      <a href="https://link.dialogika.co/whatsapp-pendaftaran" class="btn-register">Daftar Sekarang</a>
-    </div>
-  </header>
+  <!-- ======= Top Bar, Header, Side Bar ======= -->
+  <main-header></main-header>
+  <!-- ======= Top Bar, Header, Side Bar ======= -->  
 
-  <!-- Main Content -->
-  <main>
-    <!-- Breadcrumbs -->
-    <section class="breadcrumb-wrap">
-      <div class="breadcrumb-container">
-        <h1 class="breadcrumb-title">404 Not Found</h1>
-        <div class="breadcrumb-nav">
-          <a href="https://dialogika.co">Home</a>
-          <span>/</span>
-          <span>404 Not Found</span>
-        </div>
-      </div>
-    </section>
+  <!-- ======= Breadcrumbs Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
 
-    <!-- 404 Center Section -->
-    <section class="content-wrap">
-      <div class="badge-expired">404 NOT FOUND</div>
-      <h2 class="title-expired">LINK YANG ANDA TUJU SUDAH EXPIRED</h2>
-      <p class="desc-expired">Program, link, event, kegiatan yang anda tuju sudah tidak ada lagi atau expired</p>
-    </section>
-  </main>
-
-  <!-- Footer (4 Kolom Sesuai Gambar 2) -->
-  <footer class="footer-wrap">
-    <div class="footer-container">
-      
-      <!-- Kolom 1: Dialogika Intro, Contact, Follow -->
-      <div>
-        <div class="footer-logo">DIALOGIKA</div>
-        <p class="footer-text">
-          Wadah pengembangan diri membangun aura positif sekaligus meningkatkan kualitas skill, karir hingga level kehidupan Anda.
-        </p>
-        <p class="footer-text">
-          Kami memberikan pelatihan Kelas Public Speaking karena dengan menguasai Public Speaking, mental, perilaku, penampilan hingga sikap Anda terbentuk.
-        </p>
-        <div class="footer-heading">Contact Us</div>
-        <div class="contact-icons">
-          <a href="https://wa.link/ms2gko" class="icon-btn" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-          <a href="mailto:admin@dialogika.co" class="icon-btn" title="Email"><i class="bi bi-envelope-fill"></i></a>
-        </div>
-        <p class="footer-text" style="margin-bottom: 8px;">Punya pertanyaan mengenai Dialogika?</p>
-        <div class="contact-info-list">
-          <div><strong>Phone:</strong> +62 851-6299-2597</div>
-          <div><strong>Whatsapp:</strong> +62 857-8000-7799</div>
-          <div><strong>Email:</strong> hello@dialogika.co</div>
-        </div>
-        <div class="footer-heading" style="margin-top: 14px; margin-bottom: 10px;">Follow Us</div>
-        <div class="social-follow-btns">
-          <a href="https://twitter.com/dialogika"><i class="bi bi-twitter"></i></a>
-          <a href="https://facebook.com/dialogika"><i class="bi bi-facebook"></i></a>
-          <a href="https://instagram.com/dialogika"><i class="bi bi-instagram"></i></a>
-          <a href="https://linkedin.com/company/dialogika"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-
-      <!-- Kolom 2: Online Program, Offline Program, About, Useful Links -->
-      <div>
-        <div class="footer-heading">Online Program</div>
-        <ul class="footer-links-list">
-          <li><a href="https://dialogika.co/kursus-public-speaking-online"><i class="bi bi-chevron-right"></i> Basic Class <span class="badge-selling">Best Selling</span></a></li>
-          <li><a href="https://dialogika.co/kursus-public-speaking-anak"><i class="bi bi-chevron-right"></i> Kids Class</a></li>
-          <li><a href="https://dialogika.co/kursus-public-speaking-anak"><i class="bi bi-chevron-right"></i> Kids Private</a></li>
-        </ul>
-
-        <div class="footer-heading">Offline Program</div>
-        <ul class="footer-links-list">
-          <li><a href="https://dialogika.co/kelas-public-speaking-jogja"><i class="bi bi-chevron-right"></i> Yogyakarta <span class="badge-selling">Best Selling</span></a></li>
-          <li><a href="https://dialogika.co/kelas-public-speaking-jakarta"><i class="bi bi-chevron-right"></i> Jakarta</a></li>
-          <li><a href="https://dialogika.co/kelas-public-speaking-tangsel"><i class="bi bi-chevron-right"></i> Bintaro</a></li>
-          <li><a href="https://dialogika.co/kelas-public-speaking-surabaya"><i class="bi bi-chevron-right"></i> Surabaya</a></li>
-        </ul>
-
-        <div class="footer-heading">About</div>
-        <ul class="footer-links-list">
-          <li><a href="https://dialogika.co/about"><i class="bi bi-chevron-right"></i> About</a></li>
-          <li><a href="https://dialogika.co/faq"><i class="bi bi-chevron-right"></i> FAQ</a></li>
-          <li><a href="https://dialogika.co/help"><i class="bi bi-chevron-right"></i> Help Center</a></li>
-          <li><a href="https://dialogika.co/terms"><i class="bi bi-chevron-right"></i> Terms & Agreement</a></li>
-        </ul>
-
-        <div class="footer-heading">Useful Links</div>
-        <ul class="footer-links-list">
-          <li><a href="https://dialogika.co/blog"><i class="bi bi-chevron-right"></i> Blog</a></li>
-          <li><a href="https://dialogika.co/mentor"><i class="bi bi-chevron-right"></i> Mentor</a></li>
-        </ul>
-      </div>
-
-      <!-- Kolom 3: Corporate Program & Instagram Post -->
-      <div>
-        <div class="footer-heading">Corporate Program</div>
-        <ul class="footer-links-list">
-          <li><a href="https://dialogika.co/corporate"><i class="bi bi-chevron-right"></i> Effective Communication</a></li>
-          <li><a href="https://dialogika.co/corporate"><i class="bi bi-chevron-right"></i> Service Excellence</a></li>
-          <li><a href="https://dialogika.co/corporate"><i class="bi bi-chevron-right"></i> Sales Training</a></li>
-          <li><a href="https://dialogika.co/corporate"><i class="bi bi-chevron-right"></i> Tour Guide Training</a></li>
-        </ul>
-
-        <div class="footer-heading">Instagram Post</div>
-        <div class="ig-posts-list">
-          <div class="ig-post-item">
-            <img src="https://dialogika.co/assets/img/ig/1.jpg" class="ig-post-thumb" alt="IG" onerror="this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?w=100&h=100&fit=crop';">
-            <div class="ig-post-info">
-              <a href="https://www.instagram.com/dialogika.co" target="_blank">Gambaran kelas praktek public speaking secara offline</a>
-              <div class="ig-post-date"><i class="bi bi-calendar3"></i> Nov 26, 2022</div>
-            </div>
-          </div>
-          <div class="ig-post-item">
-            <img src="https://dialogika.co/assets/img/ig/2.jpg" class="ig-post-thumb" alt="IG" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop';">
-            <div class="ig-post-info">
-              <a href="https://www.instagram.com/dialogika.co" target="_blank">Tips-tips agar di notice dosen didalam kelas dan latihan membangun persona.</a>
-              <div class="ig-post-date"><i class="bi bi-calendar3"></i> Oct 14, 2023</div>
-            </div>
-          </div>
-          <div class="ig-post-item">
-            <img src="https://dialogika.co/assets/img/ig/3.jpg" class="ig-post-thumb" alt="IG" onerror="this.src='https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=100&h=100&fit=crop';">
-            <div class="ig-post-info">
-              <a href="https://www.instagram.com/dialogika.co" target="_blank">5 tips jitu atasi otak yang ngeblank saat berbicara di depan umum</a>
-              <div class="ig-post-date"><i class="bi bi-calendar3"></i> Oct 30, 2023</div>
-            </div>
-          </div>
-          <div class="ig-post-item">
-            <img src="https://dialogika.co/assets/img/ig/4.jpg" class="ig-post-thumb" alt="IG" onerror="this.src='https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=100&h=100&fit=crop';">
-            <div class="ig-post-info">
-              <a href="https://www.instagram.com/dialogika.co" target="_blank">5 trik untuk para newbie agar viral di depan umum. (Cocok untuk konten creator)</a>
-              <div class="ig-post-date"><i class="bi bi-calendar3"></i> Nov 2, 2023</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Kolom 4: Subscribe, Payment Method, Kemenkumham -->
-      <div>
-        <div class="footer-heading">Subscribe</div>
-        <p class="sub-desc">
-          Dapatkan update program, tips public speaking, dan info promo terbaru dari Dialogika melalui email.
-        </p>
-        <form class="sub-form" action="javascript:void(0);">
-          <input type="email" placeholder="Masukkan email kamu" required>
-          <button type="submit">Subscribe</button>
-        </form>
-
-        <div class="footer-heading">Payment Method</div>
-        <div class="payment-sec">
-          <div class="payment-label"><i class="bi bi-chevron-down"></i> Bank Transfer</div>
-          <div class="payment-logos">
-            <span class="payment-badge">BCA Syariah</span>
-            <span class="payment-badge">BSI</span>
-            <span class="payment-badge">ATM Bersama</span>
-          </div>
-          <div class="payment-label"><i class="bi bi-chevron-down"></i> E-Wallet</div>
-          <div class="payment-logos">
-            <span class="payment-badge">OVO</span>
-            <span class="payment-badge">GOPAY</span>
-            <span class="payment-badge">JENIUS</span>
-            <span class="payment-badge">DANA</span>
-          </div>
-        </div>
-
-        <div class="ham-card">
-          <div class="ham-icon"><i class="bx bxs-institution"></i></div>
-          <strong>Telah Terdaftar Oleh Kemenkumham</strong><br>
-          <strong>Nomor:</strong> AHU-0118640.AH.01.11.TAHUN 2022<br>
-          <strong>Registrasi:</strong> 4022062334106037
-        </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>404 Not Found</h2>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>404 Not Found</li>
+        </ol>
       </div>
 
     </div>
+  </section><!-- End Breadcrumbs Section -->
 
-    <!-- Bottom Bar -->
-    <div class="footer-bottom">
-      <div>&copy; Copyright <strong>Dialogika</strong> | PT. Dialogika Persona Indonesia</div>
-      <div class="footer-bottom-social">
-        <a href="https://twitter.com/dialogika"><i class="bi bi-twitter"></i></a>
-        <a href="https://facebook.com/dialogika"><i class="bi bi-facebook"></i></a>
-        <a href="https://instagram.com/dialogika"><i class="bi bi-instagram"></i></a>
-        <a href="https://wa.link/ms2gko"><i class="bi bi-whatsapp"></i></a>
-        <a href="https://linkedin.com/company/dialogika"><i class="bi bi-linkedin"></i></a>
+  <main id="main">
+  
+  <section class="inner-page">
+    <div class="container">
+      <div class="section-title">
+          <h6>404 NOT FOUND</h6>
+          <h1 class="" style="font-weight:bold;">LINK YANG ANDA TUJU SUDAH EXPIRED</h1>
+          <p>Program, link, event, kegiatan yang anda tuju sudah tidak ada lagi atau expired</p>
       </div>
     </div>
-  </footer>
+  </section>
+  
+  </main><!-- End #main -->
+
+  <!-- ======= Footer & Counter Area ======= -->
+  <main-footer></main-footer>
+  <!-- ======= End Footer & Counter Area ======= -->
+
+  <a href="https://wa.link/dugu63" target="__blank" class="back-to-top d-flex align-items-center justify-content-center"><i class="bx bxl-whatsapp bx-tada"></i></a>
+  
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/headerfooter.js"></script>
+  <script src="assets/js/timestamp.js"></script>
+  <script src="assets/js/whatsapp.js"></script>
+  <script src="assets/js/main.js"></script>
+
 
 </body>
 
