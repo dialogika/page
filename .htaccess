@@ -1,0 +1,2 @@
+# Dialogika 404 Error Handling
+ErrorDocument 404 /404.html
