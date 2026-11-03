@@ -27,7 +27,7 @@ class Header extends HTMLElement {
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-       <a href="../index.html" class="logo me-auto"><img src="assets/img/logo.webp" alt="" class="img-fluid"></a>
+       <a href="#hero" class="logo me-auto"><img src="assets/img/logo.webp" alt="" class="img-fluid"></a>
 
        <nav id="navbar" class="navbar order-last order-lg-0">
         <ul class="navbar-desktop-list">
@@ -36,29 +36,29 @@ class Header extends HTMLElement {
             <ul>
               <li class="dropdown"><a href="#"><span>Online</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../program/basic-play.html">Basic Play <span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
-                  <li><a href="../program/basic-plus.html">Basic Plus</a></li>
-                  <li><a href="../program/basic-private.html">Basic Private</a></li>
+                  <li><a href="https://www.dialogika.co/program/basic-play.html">Basic Play <span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
+                  <li><a href="https://www.dialogika.co/program/basic-plus.html">Basic Plus</a></li>
+                  <li><a href="https://www.dialogika.co/program/basic-private.html">Basic Private</a></li>
                   <li><hr/></li>
-                  <li><a href="../program/kids-play.html">Kids Play</a></li>
-                  <li><a href="../program/kids-plus.html">Kids Plus<span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
-                  <li><a href="../program/kids-private.html">Kids Private</a></li>
+                  <li><a href="https://www.dialogika.co/program/kids-play.html">Kids Play</a></li>
+                  <li><a href="https://www.dialogika.co/program/kids-plus.html">Kids Plus<span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
+                  <li><a href="https://www.dialogika.co/program/kids-private.html">Kids Private</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Offline</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../program/first-class.html">First Class <span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
-                  <li><a href="../program/first-kids.html">First Kids</a></li>
+                  <li><a href="https://www.dialogika.co/program/first-class.html">First Class <span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
+                  <li><a href="https://www.dialogika.co/program/first-kids.html">First Kids</a></li>
                   <li><hr/></li>
-                  <li><a href="../program/first-private.html">First Private</a></li>
+                  <li><a href="https://www.dialogika.co/program/first-private.html">First Private</a></li>
                 </ul>
               </li>
               <li><hr/></li>
               <li class="dropdown"><a href="#"><span>Area</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../program/index-jogja.html">Yogyakarta</a></li>
-                  <li><a href="../program/index-tangsel.html">Bintaro</a></li>
-                  <li><a href="../program/index-surabaya.html" onclick="return false;">
+                  <li><a href="https://www.dialogika.co/program/index-jogja.html">Yogyakarta</a></li>
+                  <li><a href="https://www.dialogika.co/program/index-tangsel.html">Bintaro</a></li>
+                  <li><a href="https://www.dialogika.co/program/index-surabaya.html" onclick="return false;">
                     <span>Surabaya</span>
                     <span class="badge rounded-pill text-bg-secondary">Coming Soon</span></a>
                   </li>
@@ -66,16 +66,16 @@ class Header extends HTMLElement {
               </li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="../corporate/">Corporate</a></li>
-          <li><a class="nav-link scrollto" href="../event/">Event</a></li>
-          <li><a class="nav-link scrollto" href="../service/">Services</a></li>
-          <li><a class="nav-link scrollto" href="../shop/">Shop</a></li>
-          <li><a class="nav-link scrollto" href="../blog/">Blog</a></li>
+          <li><a class="nav-link scrollto" href="https://www.dialogika.co/corporate/">Corporate</a></li>
+          <li><a class="nav-link scrollto" href="https://www.dialogika.co/event/">Event</a></li>
+          <li><a class="nav-link scrollto" href="javascript:void(0)" onclick="return false;">Services</a></li>
+          <li><a class="nav-link scrollto" href="javascript:void(0)" onclick="return false;">Shop</a></li>
+          <li><a class="nav-link scrollto" href="https://www.dialogika.co/blog/">Blog</a></li>
         </ul>
         <i class="bi bi-list d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"></i>
        </nav><!-- .navbar -->
 
-      <a href="../promo/" class="appointment-btn">Promo <span class="d-none d-md-inline">Class</span></a>
+      <a href="https://www.dialogika.co/promo/" class="appointment-btn">Promo <span class="d-none d-md-inline">Class</span></a>
 
     </div>
   </header><!-- End Header -->
@@ -85,7 +85,7 @@ class Header extends HTMLElement {
     <div class="container-fluid">
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <a href="../index.html">
+          <a href="#hero">
             <img src="assets/img/logo.webp" class="offcanvas-title" id="offcanvasNavbarLabel"/>
           </a>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
@@ -107,8 +107,8 @@ class Header extends HTMLElement {
                     <i class='bx bxs-chevron-down bx-tada'></i>
                   </div>
                     <div class="collapse" id="program-online">
-                      <a href="../program/basic-play.html"><div class="card card-body">Basic Play</div></a>
-                      <a href="../program/basic-plus.html">
+                      <a href="https://www.dialogika.co/program/basic-play.html"><div class="card card-body">Basic Play</div></a>
+                      <a href="https://www.dialogika.co/program/basic-plus.html">
                         <div class="card card-body">
                             <div class="justify-content-between d-flex">
                                 <span>Basic Plus</span>
@@ -116,16 +116,16 @@ class Header extends HTMLElement {
                             </div>
                         </div>
                       </a>
-                      <a href="../program/basic-private.html"><div class="card card-body">Basic Private</div></a>
+                      <a href="https://www.dialogika.co/program/basic-private.html"><div class="card card-body">Basic Private</div></a>
                       <hr/>
-                      <a href="../program/kids-play.html"><div class="card card-body">Kids Play</div></a>
-                      <a href="../program/kids-plus.html"><div class="card card-body">
+                      <a href="https://www.dialogika.co/program/kids-play.html"><div class="card card-body">Kids Play</div></a>
+                      <a href="https://www.dialogika.co/program/kids-plus.html"><div class="card card-body">
                         <div class="justify-content-between d-flex">
                           <span>Kids Plus </span>
                           <span class="badge bg-info rounded-pill">New</span>
                         </div>
                       </div></a>
-                      <a href="../program/kids-plus.html"><div class="card card-body">Kids Private</div></a>
+                      <a href="https://www.dialogika.co/program/kids-plus.html"><div class="card card-body">Kids Private</div></a>
                     </div>
                 </div>
               </a>
@@ -136,7 +136,7 @@ class Header extends HTMLElement {
                     <i class='bx bxs-chevron-down bx-tada'></i>
                   </div>
                     <div class="collapse" id="program-offline">
-                      <a href="../program/first-class.html">
+                      <a href="https://www.dialogika.co/program/first-class.html">
                         <div class="card card-body">
                             <div class="justify-content-between d-flex">
                                 <span>First Class</span>
@@ -144,39 +144,39 @@ class Header extends HTMLElement {
                             </div>
                         </div>
                       </a>
-                      <a href="../program/first-kids.html"><div class="card card-body">
+                      <a href="https://www.dialogika.co/program/first-kids.html"><div class="card card-body">
                         <div class="justify-content-between d-flex">
                           <span>First Kids </span>
                           <span class="badge bg-info rounded-pill">New</span>
                         </div>
                       </div></a>
                       <hr/>
-                      <a href="../program/first-private.html"><div class="card card-body">First Private</div></a>
+                      <a href="https://www.dialogika.co/program/first-private.html"><div class="card card-body">First Private</div></a>
                     </div>
                 </div>
               </a>
             </div>
           </div>
-          <a href="../corporate/"><div class="card card-body">Corporate</div></a>
-          <a href="../event/"><div class="card card-body">
+          <a href="https://www.dialogika.co/corporate/"><div class="card card-body">Corporate</div></a>
+          <a href="https://www.dialogika.co/event/"><div class="card card-body">
             <div class="justify-content-between d-flex">
               <span>Event </span>
               <!-- <span class="badge bg-info rounded-pill">New</span> -->
             </div>
           </div></a>
-          <a href="../service/" onclick="return false;"><div class="card card-body">
+          <a href="javascript:void(0)" onclick="return false;"><div class="card card-body">
             <div class="justify-content-between d-flex">
               <span>Service </span>
               <span class="badge bg-warning rounded-pill">Coming Soon</span>
             </div>
           </div></a>
-          <a href="../shop/" onclick="return false;"><div class="card card-body">
+          <a href="javascript:void(0)" onclick="return false;"><div class="card card-body">
             <div class="justify-content-between d-flex">
               <span>Shop </span>
               <span class="badge bg-warning rounded-pill">Coming Soon</span>
             </div>
           </div></a>
-          <a href="../blog/"><div class="card card-body">Blog</div></a>
+          <a href="https://www.dialogika.co/blog/"><div class="card card-body">Blog</div></a>
         </div>
       </div>
     </div>
@@ -245,19 +245,19 @@ class Footer extends HTMLElement {
               </a>
               <ul class="accordion-collapse collapse show" id="footer-best-program" data-bs-parent=".footer-links">
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../program/basic-plus.html">
+                  <a href="https://www.dialogika.co/program/basic-plus.html">
                     Basic Plus
                     <span class="badge rounded-pill text-bg-info">Best Selling</span>
                   </a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../program/kids-plus.html">Kids Plus</a>
+                  <a href="https://www.dialogika.co/program/kids-plus.html">Kids Plus</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../program/basic-private.html">Basic Private</a>
+                  <a href="https://www.dialogika.co/program/basic-private.html">Basic Private</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../program/kids-private.html">Kids Private</a>
+                  <a href="https://www.dialogika.co/program/kids-private.html">Kids Private</a>
                 </li>
               </ul>
             </div><br>
@@ -268,22 +268,22 @@ class Footer extends HTMLElement {
               </a>
               <ul class="accordion-collapse collapse show" id="footer-corporate-program">
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../program/index-jogja.html">
+                  <a href="https://www.dialogika.co/program/index-jogja.html">
                     Yogyakarta
                     <span class="badge rounded-pill text-bg-info">Best Selling</span>
                   </a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../corporate/index.html">Corporate</a>
+                  <a href="https://www.dialogika.co/corporate/index.html">Corporate</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../program/index-tangsel.html">
+                  <a href="https://www.dialogika.co/program/index-tangsel.html">
                     Bintaro
                     <span class="badge rounded-pill text-bg-warning">Private Only</span>
                   </a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../program/first-class.html">Surabaya <span class="badge rounded-pill text-bg-warning">Coming Soon</span></a>
+                  <a href="https://www.dialogika.co/program/first-class.html">Surabaya <span class="badge rounded-pill text-bg-warning">Coming Soon</span></a>
                 </li>
               </ul>
             </div><br>
@@ -294,10 +294,10 @@ class Footer extends HTMLElement {
               </a>
               <ul class="accordion-collapse collapse show" id="footer-private-program" data-bs-parent=".footer-links">
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../program/kids-plus.html">Online Class</a>
+                  <a href="https://www.dialogika.co/program/kids-plus.html">Online Class</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../program/first-kids.html">Offline Class</a>
+                  <a href="https://www.dialogika.co/program/first-kids.html">Offline Class</a>
                 </li>
               </ul>
             </div><br>
@@ -309,10 +309,10 @@ class Footer extends HTMLElement {
               </a>
               <ul class="accordion-collapse collapse show" id="footer-career-info" data-bs-parent=".footer-links">
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../mentor/registration.html">Mentor</a>
+                  <a href="https://www.dialogika.co/mentor/registration.html">Mentor</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../intern/index.html">Internship</a>
+                  <a href="https://www.dialogika.co/intern/index.html">Internship</a>
                 </li>
               </ul>
               <br>
@@ -324,10 +324,10 @@ class Footer extends HTMLElement {
               </a>
               <ul class="accordion-collapse collapse show" id="footer-useful-link" data-bs-parent=".footer-links">
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../blog/index.html">Blog Dialogika</a>
+                  <a href="https://www.dialogika.co/blog/index.html">Blog Dialogika</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../mentor/index.html">Mentor Dialogika</a>
+                  <a href="https://www.dialogika.co/mentor/index.html">Mentor Dialogika</a>
                 </li>
               </ul>
             </div>
@@ -341,19 +341,19 @@ class Footer extends HTMLElement {
               </a>
               <ul class="accordion-collapse collapse show" id="footer-about-dialogika" data-bs-parent=".footer-links">
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../about/">About Us</a>
+                  <a href="https://www.dialogika.co/about/">About Us</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../about/faq.html">Frequent Asked Question</a>
+                  <a href="https://www.dialogika.co/about/faq.html">Frequent Asked Question</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../about/help.html">Help Center</a>
+                  <a href="https://www.dialogika.co/about/help.html">Help Center</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../about/privacy.html">Privacy Policy</a>
+                  <a href="https://www.dialogika.co/about/privacy.html">Privacy Policy</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../about/terms.html">Terms & Agreements</a>
+                  <a href="https://www.dialogika.co/about/terms.html">Terms & Agreements</a>
                 </li>
               </ul><br/>
             </div>
@@ -362,7 +362,7 @@ class Footer extends HTMLElement {
                 <h4>Instagram Post <i class='bx bx-chevron-down d-md-none'></i></h4>
                 <ul>
                   <li class="clearfix">
-                    <img src="assets/img/ig/1.jpg" alt="" class="rounded ig-post float-left" style="margin-right: 10px;width: 70px;height: 70px; border-radius: 10px;">
+                    <img src="https://www.dialogika.co/assets/img/ig/1.jpg" alt="" class="rounded ig-post float-left" style="margin-right: 10px;width: 70px;height: 70px; border-radius: 10px;">
                     <div class="post float-left">
                       <a target="__blank" href="https://www.instagram.com/p/Claa6CPISTB/">Gambaran kelas praktek public speaking secara offline</a>
                       <div class="date"><i class="bx bx-calendar" aria-hidden="true"></i> Nov 26, 2022</div>
@@ -370,7 +370,7 @@ class Footer extends HTMLElement {
                   </li>
                   <hr/>
                   <li class="clearfix">
-                    <img src="assets/img/ig/2.jpg" alt="" class="rounded ig-post float-left" style="margin-right: 10px;width: 70px;height: 70px; border-radius: 10px;">
+                    <img src="https://www.dialogika.co/assets/img/ig/2.jpg" alt="" class="rounded ig-post float-left" style="margin-right: 10px;width: 70px;height: 70px; border-radius: 10px;">
                     <div class="post float-left">
                       <a target="__blank" href="https://www.instagram.com/p/CyXfjtkrJe7/">Tips-tips agar di notice dosen didalam kelas dan latihan membangun persona.</a>
                       <div class="date"><i class="bx bx-calendar" aria-hidden="true"></i> Oct 14, 2023</div>
@@ -378,7 +378,7 @@ class Footer extends HTMLElement {
                   </li>
                   <hr/>
                   <li class="clearfix">
-                    <img src="assets/img/ig/3.jpg" alt="" class="rounded ig-post float-left" style="margin-right: 10px;width: 70px;height: 70px; border-radius: 10px;">
+                    <img src="https://www.dialogika.co/assets/img/ig/3.jpg" alt="" class="rounded ig-post float-left" style="margin-right: 10px;width: 70px;height: 70px; border-radius: 10px;">
                     <div class="post float-left">
                       <a target="__blank" href="https://www.instagram.com/p/CzAf73qr2mj/">5 tips jitu atasi otak yang ngeblank saat berbicara di depan umum</a>
                       <div class="date"><i class="bx bx-calendar" aria-hidden="true"></i> Oct 30, 2023</div>
@@ -386,10 +386,10 @@ class Footer extends HTMLElement {
                   </li>
                   <hr/>
                   <li class="clearfix">
-                    <img src="assets/img/ig/4.jpg" alt="" class="rounded ig-post float-left" style="margin-right: 10px;width: 70px;height: 70px; border-radius: 10px;">
+                    <img src="https://i.pinimg.com/736x/c6/f9/78/c6f978feb7a8f99fb4df7753983d7e63.jpg" alt="3 Kemampuan Komunikasi Dalam Dunia Kerja" class="rounded ig-post float-left" style="margin-right: 10px;width: 70px;height: 70px; object-fit: cover; border-radius: 10px;">
                     <div class="post float-left">
-                      <a target="__blank" href="blog-details.html">5 trik untuk para newbie agar viral di depan umum. (Cocok untuk konten creator)</a>
-                      <div class="date"><i class="bx bx-calendar" aria-hidden="true"></i> Nov 2, 2023</div>
+                      <a target="__blank" href="https://www.dialogika.co/blog-dialogika/blog/3-kemampuan-komunikasi-dalam-dunia-kerja-yang-paling-diperlukan-rugi-kalau-gak-tahu-teori-komunikasi-organisasi.html">3 Kemampuan Komunikasi Dalam Dunia Kerja yang Paling Diperlukan, Rugi Kalau Gak Tahu!</a>
+                      <div class="date"><i class="bx bx-calendar" aria-hidden="true"></i> Oct 25, 2026</div>
                     </div>
                   </li>
                 </ul>
@@ -407,15 +407,15 @@ class Footer extends HTMLElement {
             <br><br>
             <h4 class="d-flex justify-content-between">Payment Method<i class='bx bx-chevron-down d-md-none'></i></h4>
             <p><i class="bx bx-chevron-down"></i> Bank Transfer</p>
-            <img src="assets/img/bank.webp" />
+            <img src="https://www.dialogika.co/assets/img/bank.webp" />
             <br><br>
             <p><i class="bx bx-chevron-down"></i> E-Wallet</p>
-            <img src="assets/img/wallet.webp" />
+            <img src="https://www.dialogika.co/assets/img/wallet.webp" />
 
             <ul class="list-group border-warning" style="background: transparent;">
               <li class="list-group-item">
                 <b>Telah Terdaftar Oleh</b><br>
-                <img src="assets/img/ham.webp" class="" /><br>
+                <img src="https://www.dialogika.co/assets/img/ham.webp" class="" /><br>
                 <strong>Nomor:</strong> AHU-0118640.AH.01.11.TAHUN 2022<br>
                 <strong>Registrasi: </strong>4022062334106037<br />
               </li>
